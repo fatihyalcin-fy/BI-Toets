@@ -28,7 +28,7 @@ if 'viewport' not in html:
 # ── 3. Add hamburger button inside #topbar ─────────────────────────────────
 html = html.replace(
     '<div id="topbar">',
-    '<div id="topbar"><button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">&#9776;</button>'
+    '<div id="topbar"><button class="hamburger-btn" aria-label="Menu"><span></span><span></span><span></span></button>'
 )
 
 # ── 4. Remove ALL old <script> blocks (embedded quiz engine) ───────────────
@@ -126,8 +126,7 @@ for section, (title, prefix, label) in CIKMIS_SELECTOR_SECTIONS.items():
       document.addEventListener('DOMContentLoaded', function(){{
         initSetSelector('set-selector-{section}-cikmis', '{prefix}', 'quiz-container-{section}-cikmis');
       }});
-    </script>
-  </div>'''
+    </script>'''
 
     old_pat = rf'<div class="tab-content" id="{section}-cikmis">.*?</div>\s*(?=<(?:!--|div class="tab-content"|/div>))'
     html = re.sub(old_pat, selector_html + '\n  ', html, count=1, flags=re.DOTALL)
@@ -218,11 +217,16 @@ html = html.replace(
 # ── 10. Inject all external scripts before </body> ────────────────────────
 SCRIPTS = '''
 <script src="data_cikmis.js"></script>
-<script src="data_cikmis_basis.js"></script>
-<script src="data_cikmis_endo.js"></script>
 <script src="data_cikmis_paro.js"></script>
+<script src="data_cikmis_endo.js"></script>
 <script src="data_cikmis_pedo.js"></script>
 <script src="data_cikmis_speeksel.js"></script>
+<script src="data_cikmis_basis.js"></script>
+<script src="data_cikmis_2018_2019.js"></script>
+<script src="data_cikmis_2020_2021.js"></script>
+<script src="data_cikmis_2022_2023.js"></script>
+<script src="data_cikmis_2024.js"></script>
+<script src="data_cikmis_2025.js"></script>
 <script src="data_thk1.js"></script>
 <script src="data_drive_imported.js"></script>
 <script src="data_drive_notes.js"></script>

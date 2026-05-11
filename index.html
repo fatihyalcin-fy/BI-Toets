@@ -65,9 +65,9 @@
   </div>
 </nav>
 <main id="main">
-  <div id="topbar"><button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">&#9776;</button>
+  <div id="topbar"><button class="hamburger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
     <h1 id="topbar-title">BI Toets Studieplatform by FY</h1>
-    <div class="top-chip"><span>1000+</span> vragen</div>
+    <div class="top-chip"><span>305+</span> vragen</div>
     <div class="top-chip"><span>12</span> modules</div>
   </div>
   <div id="content">
@@ -79,10 +79,10 @@
     <h1>Studieplatform voor BIG-registratie</h1>
     <p>Volledig interactief studieplatform voor tandartsen die de BI Toets willen afleggen. Inclusief studienotities, samenvatting en uitgebreide oefentoetsen met échte cikmış sorular.</p>
     <div class="hero-stats">
-      <div class="hero-stat"><span class="num">1000+</span><span class="lbl">MC vragen</span></div>
+      <div class="hero-stat"><span class="num">305+</span><span class="lbl">MC vragen</span></div>
       <div class="hero-stat"><span class="num">4</span><span class="lbl">Toetsblokken</span></div>
       <div class="hero-stat"><span class="num">80%</span><span class="lbl">Slagingsgrens</span></div>
-      <div class="hero-stat"><span class="num">1000+</span><span class="lbl">Oefenvragen</span></div>
+      <div class="hero-stat"><span class="num">400+</span><span class="lbl">Oefenvragen</span></div>
     </div>
   </div>
 
@@ -697,14 +697,14 @@
   </div>
   <div class="tab-content" id="cario-cikmis">
     <div class="info-box">
-      <div class="info-box-title">📝 Cariologie çıkmış soru setleri</div>
-      <ul><li>Google Drive arşivinden aktarılan yıl/dosya setleri · antwoorden worden willekeurig geschud</li></ul>
+      <div class="info-box-title">📝 Cariologie cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Cariologie çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
     </div>
     <div id="set-selector-cario-cikmis"></div>
-    <div id="quiz-container-cario_cikmis"></div>
+    <div id="quiz-container-cario-cikmis"></div>
     <script>
       document.addEventListener('DOMContentLoaded', function(){
-        initSetSelector('set-selector-cario-cikmis', 'cario_cikmis', 'quiz-container-cario_cikmis');
+        initSetSelector('set-selector-cario-cikmis', 'cario_cikmis', 'quiz-container-cario-cikmis');
       });
     </script>
   </div>
@@ -915,7 +915,7 @@
   </div>
   <div class="tab-content" id="speeksel-cikmis">
     <div class="info-box">
-      <div class="info-box-title">📝 Speeksel & Orale Biologie cikmis soru bankası</div>
+      <div class="info-box-title">📝 Speeksel &amp; Orale Biologie cikmis soru bankası</div>
       <ul><li>Alle beschikbare Speeksel çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
     </div>
     <div id="set-selector-speeksel-cikmis"></div>
@@ -997,17 +997,6 @@
     </div>
   </div>
   <div class="tab-content" id="sociale-oefen">
-    <div class="info-box">
-      <div class="info-box-title">📝 Sociale TH / Ethiek çıkmış soru setleri</div>
-      <ul><li>Drive'daki Ethiek dosyalarından aktarılan MC setleri</li></ul>
-    </div>
-    <div id="set-selector-sociale-cikmis"></div>
-    <div id="quiz-container-sociale_cikmis"></div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function(){
-        initSetSelector('set-selector-sociale-cikmis', 'sociale_cikmis', 'quiz-container-sociale_cikmis');
-      });
-    </script>
     <h3 style="font-size:15px;font-weight:700;margin-bottom:14px">📝 Open vragen – Ethiek &amp; Sociale TH</h3>
     <div class="casus-card">
       <div class="casus-label">Oefenvraag 1</div>
@@ -1154,14 +1143,14 @@
   </div>
   <div class="tab-content" id="kinesio-cikmis">
     <div class="info-box">
-      <div class="info-box-title">📝 Kinesiologie / TMD çıkmış soru setleri</div>
-      <ul><li>THK2 Drive dosyalarından ayrıştırılan setler</li></ul>
+      <div class="info-box-title">📝 Kinesiologie / TMD cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Kinesiologie çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
     </div>
     <div id="set-selector-kinesio-cikmis"></div>
-    <div id="quiz-container-kinesio_cikmis"></div>
+    <div id="quiz-container-kinesio-cikmis"></div>
     <script>
       document.addEventListener('DOMContentLoaded', function(){
-        initSetSelector('set-selector-kinesio-cikmis', 'kinesio_cikmis', 'quiz-container-kinesio_cikmis');
+        initSetSelector('set-selector-kinesio-cikmis', 'kinesio_cikmis', 'quiz-container-kinesio-cikmis');
       });
     </script>
   </div>
@@ -1328,14 +1317,14 @@
   </div>
   <div class="tab-content" id="functie-cikmis">
     <div class="info-box">
-      <div class="info-box-title">📝 Orale Functieleer / MZK çıkmış soru setleri</div>
-      <ul><li>THK2 Drive dosyalarından aktarılan fonksiyon, MZK ve behandelplan odaklı sorular</li></ul>
+      <div class="info-box-title">📝 Orale Functieleer / MZK cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Functieleer çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
     </div>
     <div id="set-selector-functie-cikmis"></div>
-    <div id="quiz-container-functie_cikmis"></div>
+    <div id="quiz-container-functie-cikmis"></div>
     <script>
       document.addEventListener('DOMContentLoaded', function(){
-        initSetSelector('set-selector-functie-cikmis', 'functie_cikmis', 'quiz-container-functie_cikmis');
+        initSetSelector('set-selector-functie-cikmis', 'functie_cikmis', 'quiz-container-functie-cikmis');
       });
     </script>
   </div>
@@ -1437,14 +1426,14 @@
   </div>
   <div class="tab-content" id="pato-cikmis">
     <div class="info-box">
-      <div class="info-box-title">📝 Orale Pathologie çıkmış soru setleri</div>
-      <ul><li>THK2 Drive dosyalarından ayrıştırılan pathologie setleri</li></ul>
+      <div class="info-box-title">📝 Orale Pathologie cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Orale Pathologie çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
     </div>
     <div id="set-selector-pato-cikmis"></div>
-    <div id="quiz-container-pato_cikmis"></div>
+    <div id="quiz-container-pato-cikmis"></div>
     <script>
       document.addEventListener('DOMContentLoaded', function(){
-        initSetSelector('set-selector-pato-cikmis', 'pato_cikmis', 'quiz-container-pato_cikmis');
+        initSetSelector('set-selector-pato-cikmis', 'pato_cikmis', 'quiz-container-pato-cikmis');
       });
     </script>
   </div>
@@ -1530,14 +1519,14 @@
   </div>
   <div class="tab-content" id="ortho-cikmis">
     <div class="info-box">
-      <div class="info-box-title">📝 Orthodontie çıkmış soru setleri</div>
-      <ul><li>THK2 Drive dosyalarından ayrıştırılan orthodontie setleri</li></ul>
+      <div class="info-box-title">📝 Orthodontie cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Orthodontie çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
     </div>
     <div id="set-selector-ortho-cikmis"></div>
-    <div id="quiz-container-ortho_cikmis"></div>
+    <div id="quiz-container-ortho-cikmis"></div>
     <script>
       document.addEventListener('DOMContentLoaded', function(){
-        initSetSelector('set-selector-ortho-cikmis', 'ortho_cikmis', 'quiz-container-ortho_cikmis');
+        initSetSelector('set-selector-ortho-cikmis', 'ortho_cikmis', 'quiz-container-ortho-cikmis');
       });
     </script>
   </div>
@@ -1848,14 +1837,14 @@
 
   <div class="tab-content" id="radio-cikmis">
     <div class="info-box">
-      <div class="info-box-title">📝 Radiologie çıkmış soru setleri</div>
-      <ul><li>Drive'daki radiologie dosyalarından aktarılan setler</li></ul>
+      <div class="info-box-title">📝 Radiologie cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Radiologie çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
     </div>
     <div id="set-selector-radio-cikmis"></div>
-    <div id="quiz-container-radio_cikmis"></div>
+    <div id="quiz-container-radio-cikmis"></div>
     <script>
       document.addEventListener('DOMContentLoaded', function(){
-        initSetSelector('set-selector-radio-cikmis', 'radio_cikmis', 'quiz-container-radio_cikmis');
+        initSetSelector('set-selector-radio-cikmis', 'radio_cikmis', 'quiz-container-radio-cikmis');
       });
     </script>
   </div>
@@ -1977,14 +1966,14 @@
   </div>
   <div class="tab-content" id="statistiek-cikmis">
     <div class="info-box">
-      <div class="info-box-title">📝 Statistiek / EBM çıkmış soru setleri</div>
-      <ul><li>Drive'daki wetenschap ve statistiek dosyalarından aktarılan setler</li></ul>
+      <div class="info-box-title">📝 Statistiek / EBM cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Statistiek çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
     </div>
     <div id="set-selector-statistiek-cikmis"></div>
-    <div id="quiz-container-statistiek_cikmis"></div>
+    <div id="quiz-container-statistiek-cikmis"></div>
     <script>
       document.addEventListener('DOMContentLoaded', function(){
-        initSetSelector('set-selector-statistiek-cikmis', 'statistiek_cikmis', 'quiz-container-statistiek_cikmis');
+        initSetSelector('set-selector-statistiek-cikmis', 'statistiek_cikmis', 'quiz-container-statistiek-cikmis');
       });
     </script>
   </div>
@@ -2632,11 +2621,16 @@ Aandacht: Bij MOD-kaviteit + WKB → kroon verplicht om wortelfractuur te voorko
 
 
 <script src="data_cikmis.js"></script>
-<script src="data_cikmis_basis.js"></script>
-<script src="data_cikmis_endo.js"></script>
 <script src="data_cikmis_paro.js"></script>
+<script src="data_cikmis_endo.js"></script>
 <script src="data_cikmis_pedo.js"></script>
 <script src="data_cikmis_speeksel.js"></script>
+<script src="data_cikmis_basis.js"></script>
+<script src="data_cikmis_2018_2019.js"></script>
+<script src="data_cikmis_2020_2021.js"></script>
+<script src="data_cikmis_2022_2023.js"></script>
+<script src="data_cikmis_2024.js"></script>
+<script src="data_cikmis_2025.js"></script>
 <script src="data_thk1.js"></script>
 <script src="data_drive_imported.js"></script>
 <script src="data_drive_notes.js"></script>
