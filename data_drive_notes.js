@@ -57,7 +57,7 @@ window.DRIVE_NOTES = {
         'Irreversibele pulpitis: soguk uyaran kalktikdan sonra devam eden, uzayan agri tipiktir.',
         'Pulpitis tek basina lamina dura rezorpsiyonu yapmaz; apikal bulgu apicale parodontitis ile beklenir.',
         'Koude test negatif + PDL verwijding ve agri yoksa asymptomatische apicale parodontitis dusunulur.',
-        'Cracked tooth: isirma veya birakma aninda agri; central sensitization agrinin daha genis alandan geliyormus gibi algilanmasidir.'
+        'Cracked tooth: isirma veya birakma aninda agri; central sensitization agrinin daha genis alandan geliyormus gibi algilanmasidir.',
       ]
     },
     {
@@ -322,7 +322,9 @@ window.DRIVE_NOTES = {
         'Grapefruit, simvastatin ve cimetidine farmakokinetik interactie/enzyme inhibition baglaminda sorulur.',
         'Omeprazol PPI; antacid asidi neutralize eder ama asit uretimini inhibe etmez.',
         'NSAID/ibuprofen prostaglandin inhibisyonu yapar; ulcus, nierinsufficientie ve maagklachten risklerinde dikkat.',
-        'Tetracycline/doxycycline dis renklenmesi ve gebelik/kucuk cocuk kontraendikasyonu ile sorulur.'
+        'Tetracycline/doxycycline dis renklenmesi ve gebelik/kucuk cocuk kontraendikasyonu ile sorulur.',
+        'Tetracyclines bacteriostatisch etki eder: bacteriele eiwitsynthese inhibisyonu; amoxicilline ile antagonisme sorusu bu mantiktan gelir.',
+        'Korte halfwaardetijd daha kisa doseringsinterval gerektirir; enzymremmer ilac kan duzeyini yukseltebilir, enzyminductor dusurebilir.'
       ]
     },
     {
@@ -330,10 +332,14 @@ window.DRIVE_NOTES = {
       title: 'Lokale anesthesie, cardiovasculair en spoed',
       points: [
         'Adrenaline vazokonstriksiyonla etki suresini uzatir ve kanamayi azaltir; uncontrolled hypertension/hyperthyroidismte risklidir.',
+        'Epinefrine ve adrenaline ayni vasoconstrictor isimleridir; LA sorularinda ayni madde olarak dusun.',
+        'Bovenkaak gebitselement sensibiliteit n. maxillaris/V2 uzerinden gelir; n. facialis cevabi yanlistir.',
+        '16 palatinale infiltratie icin palatumun horizontale-verticale gecis bolgesi Drive BM 644te dogru isaretlenmis.',
         '180/110 veya benzeri cok yuksek tansiyonda elektif tedavi ertelenir ve huisarts/specialist yonlendirilir.',
         'TIA sonrasi elektif tedavi yaklasik 3 ay ertelenir; post-MI ve angina vakalarinda adrenalin dozu dusunulur.',
         'Vasovagal collaps bradycardia ve yavas toparlanma; hyperventilation genc anxious hastada gogus sikisma/nefes darligi ile cikar.',
-        'Diabetes hastasinda sabah randevusu ve yemek yiyip yememeyi sorma; hypoglycemia icin dextrose.'
+        'Diabetes hastasinda sabah randevusu ve yemek yiyip yememeyi sorma; hypoglycemia icin dextrose.',
+        'Arteriele vaatstijfheid arterial pressure/pulsdruk artisi ile iliskilidir; "druk azalir" ifadesi OCR pollunda onjuist.'
       ]
     },
     {
@@ -343,8 +349,10 @@ window.DRIVE_NOTES = {
         'Hemofilie A factor VIII eksikligidir; invaziv tedavi oncesi specialist overleg gerekir.',
         'Aspirin trombosit agregasyonunu bozar; thrombin fibrinojeni fibrine cevirir.',
         'Handhygiene en onemli infectiepreventie basligidir; Hep C/gonorrhea bildirimi standart onlemleri degistirmez.',
+        'Legionnaires disease hasta kisiden cevreye klasik direkt bulas riski olarak sorulmaz; kaynak kontamine aerosollu sudur.',
         'Acil aktif/open TB varsa elektif dental tedavi ertelenir/referral yapilir.',
-        'Bisfosfonatlar osteoclast inhibe eder; MRONJ riski nedeniyle cekim oncesi risk profili ve overleg onemlidir.'
+        'Bisfosfonatlar osteoclast inhibe eder; MRONJ riski nedeniyle cekim oncesi risk profili ve overleg onemlidir.',
+        'Gingivitis/parodontale ontsteking commensale mondflora dysbiose/opportunisme ile baslar; erken fazda neutrofielen/PMN, sonraki fazlarda lymfocyten artar.'
       ]
     },
     {
@@ -353,9 +361,23 @@ window.DRIVE_NOTES = {
       points: [
         'Trigeminal neuralgia kisa, saplanici agri ataklariyla sorulur; n. mandibularis sensory + motor lif tasir.',
         'COPD sigara ile iliskili; asthma attack ekspiryumda wheezing; OSAS horlama/apneu ile sorulur.',
+        'Rustige expiratie pasiftir; interne tussenribspieren daha cok geforceerde expiratie ile ilgilidir.',
         'Gastric bypass/GERD palatinal-lingual erozyonlara neden olabilir; Barrett metaplasie olarak bilinir.',
+        'Parkinson sadece motor tablo degildir; tremor/bradykinesie yaninda non-motor symptomen de sinavda sorulur.',
         'RA hastasinda boyun hiperekstansiyonundan kacinilir; cervical instability riski vardir.',
-        'Celiac disease enamel defects; hyperparathyroidism ve Kahler hastaligi kemik/fracture riskiyle cikar.'
+        'Artrose Nederlandda RAya gore daha yaygin cevap olarak isaretlenmis; RA inflamatuar, artrose degeneratif/Slijtage odaklidir.',
+        'Celiac disease enamel defects; hyperthyroidism osteoporose/fracture riskiyle; Kahler hastaligi kemik/fracture riskiyle cikar.'
+      ]
+    },
+    {
+      source: 'WhatsApp Images 2025-12-17 / BM Dec 2025 OCR',
+      title: 'Cariologie ve orale basis medisch mini-punten',
+      points: [
+        'Bebekte dis yoksa Streptococcus mutans icin tutunacak tandoppervlak yoktur; bu nedenle klasik caries gelisimi beklenmez.',
+        'Plakkerig voedsel caries riskini en cok artiran cevap olarak isaretlenmis; retentie suresi ve sik seker maruziyeti kritik.',
+        'Zuur stimulus autonome speekselreflexi tetikler; statherin calcium/fosfaat stabilizasyonu ve remineralisatie ile baglanir.',
+        'Palatinale erosie ve gastric bypass sonrasinda reflux/GERD dusun; Barrett oesophagus chronische reflux metaplasisidir.',
+        'Coeliakie glazuurlaesies/enamel defects ile, MS tremor/koordinasyon problemi ile, bisfosfonaat oncesi dental kontrol MRONJ preventie ile sorulmus.'
       ]
     }
   ],
@@ -444,7 +466,8 @@ window.DRIVE_NOTES = {
         'Faseleme: spoed/pijn, infectiecontrole, preventie, definitieve restauratie/prothese, nazorg.',
         'Paro stabilizasyonu ve caries risk kontrolu olmadan ileri protetik/implant plan risklidir.',
         'Medische contraindicaties ve overleg gerektiren durumlar planda ayrica belirtilir.',
-        'Recall intervali risk bazli secilir; sadece tedavi listesi degil onderhoud planidir.'
+        'Recall intervali risk bazli secilir; sadece tedavi listesi degil onderhoud planidir.',
+        'Steg over implantaten: voordelen goede retentie/stabiliteit ve bazen minder nazorg; nadelen kanteling, overbelasting implantaten/extensies, moeilijke reinigbaarheid ve meer intermaxillaire ruimte.'
       ]
     }
   ],
@@ -470,7 +493,10 @@ window.DRIVE_NOTES = {
         'Luxatie sonrasi sensibility kaybi gecici olabilir; acik apexte 6-12 ay toparlanma beklenebilir.',
         'Avulsie/intrusie sonrasi ankylosis/replacement resorption metalik percussie sesiyle takip edilir.',
         'External inflammatory/internal resorption suphelendiyse endodontik tedavi geciktirilmez.',
-        'Cocuk/ergen travmasinda apex acikligi, extra-oral dry time ve replantasyon zamani prognozu belirler.'
+        'Cocuk/ergen travmasinda apex acikligi, extra-oral dry time ve replantasyon zamani prognozu belirler.',
+        'Lichtgrijze 21 + palpatiepijn omslagplooi + geen caries/restauratie: oud trauma, necrotisch geinfecteerde pulpa ve lichte pijnlijke apicale parodontitis dusun.',
+        'Open/gestopte wortelontwikkeling travmanin yaklasik 8-10 yas civarinda, yani 10-14 yil once olmus olabilecegini destekler.',
+        'Apexificatie: openen onder cofferdam, spoelen met NaOCl, apicale MTA/bioceramische stop, later kanaalvulling; daarna pas intern bleken met natriumperboraat.'
       ]
     }
   ]

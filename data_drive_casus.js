@@ -67,10 +67,11 @@
       {
         source: "casuslar.docx · 2025 December",
         title: "Stegconstructie op implantaten · voordelen en nadelen",
-        text: "Drive-bron noemt vragen over stegprothese/stegconstructie op implantaten, met voor- en nadelen.",
+        text: "Drive-bron noemt vragen over stegprothese/stegconstructie op implantaten, met voor- en nadelen. WhatsApp OCR 2025-12-16 toont: voordeel goede retentie en minder nazorg nodig; nadelen kanteling van de prothese, overbelasting van implantaten/extensies, reinigbaarheid moeilijk en meer intermaxillaire ruimte nodig.",
         questions: [
-          { q: "Noem voordelen van een stegconstructie.", a: "Goede retentie en stabiliteit, krachtenverdeling over implantaten, vaak comfortabeler dan conventionele prothese. Minder technische nazorg kan een voordeel zijn afhankelijk van ontwerp en hygiene." },
-          { q: "Noem nadelen van een stegconstructie.", a: "Hogere kosten, meer techniek/labwerk, hygiene rond steg is lastiger, ruimte nodig, complicaties zoals peri-implantitis, slijtage clips of technische reparaties blijven mogelijk." }
+          { q: "Noem voordelen van een stegconstructie.", a: "Goede retentie/stabiliteit, krachtenverdeling over implantaten en vaak comfortabeler dan een conventionele prothese. De WhatsApp OCR noemt specifiek goede retentie en minder nazorg nodig." },
+          { q: "Noem nadelen van een stegconstructie.", a: "Kanteling van de prothese bij ongunstige extensies, overbelasting van implantaten/extensies, moeilijke reinigbaarheid en noodzaak voor meer intermaxillaire ruimte. Daarnaast: hogere kosten, techniek/labwerk, slijtage clips en peri-implantitisrisico." },
+          { q: "Waarom is reinigbaarheid rond een steg zo'n belangrijk beoordelingspunt?", a: "De patient moet onder en rond de steg goed kunnen reinigen. Slechte reinigbaarheid geeft plaque-retentie, mucositis/peri-implantitisrisico en kan de implantaatprognose ondermijnen." }
         ]
       },
       {
@@ -187,6 +188,17 @@
         questions: [
           { q: "Waarom is normale WKB ongunstig?", a: "Open apex en dunne wortelwanden maken volledige conventionele WKB minder voorspelbaar en fractuurgevoelig." },
           { q: "Welke behandelopties zijn relevant?", a: "Regeneratieve endodontische behandeling/revitalisatie of apexificatie met MTA/bioceramische plug; conventionele WKB alleen met duidelijke nadelen besproken." }
+        ]
+      },
+      {
+        source: "Kort behandelplan · WhatsApp Image 2025-12-11 19.18.44",
+        title: "Casus 4 · 20-jarige patient met lichtgrijze 21 en apicale pijn",
+        text: "20-jarige nieuwe patient. Element 21 is lichtgrijs verkleurd en gevoelig bij palpatie van de omslagplooi onder de neus. Geen restauraties of caries in 21. Patient vertrekt over 4 weken voor enkele maanden stage naar het buitenland. Foto toont een open/ruime apex met beeld passend bij vroegere ontwikkelingsstoornis na trauma.",
+        questions: [
+          { q: "Wat is vermoedelijk gebeurd bij 21 en wat is de diagnose?", a: "Waarschijnlijk trauma in het verleden dat niet is vervolgd. Door pulpanecrose en infectie is verkleuring ontstaan; diagnose: lichte pijnlijke/symptomatische apicale parodontitis door een necrotisch geinfecteerde pulpa na trauma." },
+          { q: "Hoe lang geleden is de afwijking waarschijnlijk ontstaan?", a: "Rond 8-10-jarige leeftijd, ongeveer 10-14 jaar geleden. Dit past bij het moment waarop de groei/wortelontwikkeling van de tand stopte na trauma." },
+          { q: "Welke behandeling voer je uit en wat zijn de korte stappen?", a: "Apexificatieprocedure: openen onder cofferdam, kanaal reinigen/spoelen met NaOCl, apicale MTA/bioceramische stop plaatsen, later het kanaal verder vullen, bijvoorbeeld met warme gutta-percha/injectietechniek. Daarna intern bleken, in de OCR-notitie met natriumperboraat genoemd." },
+          { q: "Waarom is timing belangrijk in deze casus?", a: "Patient vertrekt over 4 weken. Je moet infectie en pijnrisico voor vertrek stabiliseren, duidelijke controles plannen en uitleggen dat definitieve esthetiek/bleken pas na endodontische stabiliteit komt." }
         ]
       },
       {

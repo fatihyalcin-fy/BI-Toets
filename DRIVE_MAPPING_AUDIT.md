@@ -13,8 +13,11 @@ Root folder: `CIKMIS SORULAR`
 
 ## Site Totals After Latest Mapping
 
-- Total quiz sets: generated from `data_*.js`
-- Total questions: generated from `data_*.js`
+- Total quiz sets: 109
+- Total MC questions: 1250
+- Total Drive casus/open cases: 23
+- Total Drive casus/open questions: 65
+- Total Drive study-note groups/cards/points: 18 groups, 40 cards, 206 points
 - Main imported file: `data_drive_imported.js`
 - Casus imported file: `data_drive_casus.js`
 - Topic notes file: `data_drive_notes.js`
@@ -38,10 +41,10 @@ Root folder: `CIKMIS SORULAR`
 | 2025 december | `THK2-2025 DEC.pdf`, `2025-Dec THK2.rtf`, `2025 December THK2 Part 1.pdf`, `2025 December THK2 Part 2.docx` | partially mapped through THK2 concepts; needs exact answer-key pass |
 | 2025 december | `Ethiek.docx` | partially mapped under `sociale_cikmis_*` |
 | 2025 december | `casuslar.docx`, `canvas casuslar hepsi.pdf` | `data_drive_casus.js` mapped into `Behandelplan 1`, `Behandelplan 2`, `Endo Trauma & Pijn` |
-| 2025 december | WhatsApp images | needs OCR |
+| 2025 december | WhatsApp images | OCR mapped into `basis_cikmis_2025_dec_whatsapp_ocr`; duplicate q71-91 image checked |
 | 2025 december / Basis medisch | `BM 2020-2025.pdf`, `BM Dec 2025.docx` | `basis_cikmis_*` partially mapped |
-| 2025 december / Basis medisch | WhatsApp images | needs OCR |
-| 2025 december / Kort behandelplan | WhatsApp images | needs OCR |
+| 2025 december / Basis medisch | WhatsApp images | OCR mapped into `basis_cikmis_2025_dec_whatsapp_ocr` and `data_drive_notes.js`; duplicate q1-23/q48-70 images checked |
+| 2025 december / Kort behandelplan | WhatsApp images | OCR mapped into `data_drive_casus.js` and `data_drive_notes.js` for steg and casus 4 trauma/apexificatie |
 | 2024 JUNI | `2024 JUNI THK 1- VRAGEN*.docx` | subject cikmis sets partially mapped |
 | 2024 JUNI | `2024 JUNI THK 2-VRAGEN.docx` | THK2 subject sets partially mapped |
 | 2024 JUNI | `2024 JUNI RADIO VRAGEN*.docx` | `radio_cikmis_2024_juni_drive` mapped |
@@ -76,9 +79,9 @@ Root folder: `CIKMIS SORULAR`
 
 ## Current Gap
 
-The site now has both a mapped question bank and Drive-aligned study-note layer, but a strict "every question from every Drive file" guarantee still needs:
+The site now has a mapped question bank, Drive-aligned study-note layer, and OCR pass for the known 2025 December WhatsApp/Basis/Kort Behandelplan images. A strict "every question from every Drive file" guarantee still needs:
 
-1. OCR for WhatsApp/JPEG and scanned PDFs.
+1. OCR for remaining scanned PDFs or image-only pages outside the processed WhatsApp images.
 2. ZIP extraction for archived 2021 files.
 3. Exact answer-key normalization for older mixed Dutch/Turkish notes where correct answers are not consistently marked.
 4. De-duplication between root PDFs and year-folder duplicates.
