@@ -1,0 +1,2651 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BI Toets Studieplatform by FY – BIG Registratie Tandarts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="sidebar">
+  <div class="sidebar-logo">
+    <h2>🦷 BI Toets Platform by FY</h2>
+    <p>Studiegids voor BIG-registratie tandartsen</p>
+  </div>
+  <div class="sidebar-exam-info">
+    <strong>📊 Examenstructuur</strong>
+    <div class="exam-pill"><span>Basisch-Medisch</span><span class="ep-num">100 mc</span></div>
+    <div class="exam-pill"><span>Tandheelkunde I</span><span class="ep-num">70 mc+open</span></div>
+    <div class="exam-pill"><span>Tandheelkunde II</span><span class="ep-num">100 mc</span></div>
+    <div class="exam-pill"><span>Radiologie &amp; Wetenschap</span><span class="ep-num">35 mc+open</span></div>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Start</div>
+    <button class="nav-item active" onclick="showPage('home',this)">🏠 &nbsp;Overzicht</button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Tandheelkunde I</div>
+    <button class="nav-item" onclick="showPage('paro',this)">🔴 &nbsp;Parodontologie<span class="nav-badge">15 mc</span></button>
+    <button class="nav-item" onclick="showPage('endo',this)">🔵 &nbsp;Endodontologie<span class="nav-badge">20 mc</span></button>
+    <button class="nav-item" onclick="showPage('cario',this)">🟡 &nbsp;Cariologie<span class="nav-badge">15 mc</span></button>
+    <button class="nav-item" onclick="showPage('pedo',this)">🟢 &nbsp;Pedodontologie<span class="nav-badge">10 mc</span></button>
+    <button class="nav-item" onclick="showPage('speeksel',this)">💧 &nbsp;Speeksel &amp; Orale Bio<span class="nav-badge">10 mc</span></button>
+    <button class="nav-item" onclick="showPage('sociale',this)">🤝 &nbsp;Sociale TH / Ethiek<span class="nav-badge">open</span></button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Tandheelkunde II</div>
+    <button class="nav-item" onclick="showPage('kinesio',this)">🧠 &nbsp;Kinesiologie / TMD<span class="nav-badge">10 mc</span></button>
+    <button class="nav-item" onclick="showPage('functie',this)">🦷 &nbsp;Orale Functieleer / MZK<span class="nav-badge">35+25 mc</span></button>
+    <button class="nav-item" onclick="showPage('pato',this)">🔬 &nbsp;Orale Pathologie<span class="nav-badge">15 mc</span></button>
+    <button class="nav-item" onclick="showPage('ortho',this)">📐 &nbsp;Orthodontie<span class="nav-badge">15 mc</span></button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Basisch-Medisch</div>
+    <button class="nav-item" onclick="showPage('basis',this)">⚕️ &nbsp;Basis Medisch<span class="nav-badge">100 mc</span></button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Radiologie &amp; Wetenschap</div>
+    <button class="nav-item" onclick="showPage('radio',this)">📡 &nbsp;Radiologie<span class="nav-badge">20 mc</span></button>
+    <button class="nav-item" onclick="showPage('statistiek',this)">📊 &nbsp;Statistiek<span class="nav-badge">15 mc</span></button>
+    <button class="nav-item" onclick="showPage('methodologie',this)">🔭 &nbsp;Methodologie / EBM<span class="nav-badge">open</span></button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Casussen &amp; Vaardigheden</div>
+    <button class="nav-item" onclick="showPage('thk1',this)">📋 &nbsp;THK-1 Proeftentamen<span class="nav-badge">70 mc</span></button>
+    <button class="nav-item" onclick="showPage('bp1',this)">📋 &nbsp;Behandelplan 1</button>
+    <button class="nav-item" onclick="showPage('bp2',this)">📋 &nbsp;Behandelplan 2</button>
+    <button class="nav-item" onclick="showPage('casus',this)">📄 &nbsp;Korte Casus</button>
+    <button class="nav-item" onclick="showPage('endo_trauma',this)">🚑 &nbsp;Endo Trauma &amp; Pijn</button>
+    <button class="nav-item" onclick="showPage('gesprek',this)">💬 &nbsp;CNT Gesprek</button>
+  </div>
+  <div class="nav-group">
+    <div class="nav-group-label">Referentie</div>
+    <button class="nav-item" onclick="showPage('richtlijnen',this)">📚 &nbsp;Actuele Richtlijnen</button>
+  </div>
+</nav>
+<main id="main">
+  <div id="topbar"><button class="hamburger-btn" onclick="toggleSidebar()" aria-label="Menu">&#9776;</button>
+    <h1 id="topbar-title">BI Toets Studieplatform by FY</h1>
+    <div class="top-chip"><span>1000+</span> vragen</div>
+    <div class="top-chip"><span>12</span> modules</div>
+  </div>
+  <div id="content">
+
+<!-- ██████████████████████ HOME ██████████████████████ -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-badge">🎓 BI Toets Voorbereiding 2024-2026</div>
+    <h1>Studieplatform voor BIG-registratie</h1>
+    <p>Volledig interactief studieplatform voor tandartsen die de BI Toets willen afleggen. Inclusief studienotities, samenvatting en uitgebreide oefentoetsen met échte cikmış sorular.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num">1000+</span><span class="lbl">MC vragen</span></div>
+      <div class="hero-stat"><span class="num">4</span><span class="lbl">Toetsblokken</span></div>
+      <div class="hero-stat"><span class="num">80%</span><span class="lbl">Slagingsgrens</span></div>
+      <div class="hero-stat"><span class="num">1000+</span><span class="lbl">Oefenvragen</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--gray-700)">📊 Examenstructuur – BI Toets voor 6.0</h3>
+  <div class="exam-grid">
+    <div class="exam-card" onclick="showPage('basis',null)">
+      <div class="ec-icon">⚕️</div>
+      <div class="ec-title">Basisch-Medisch</div>
+      <div class="ec-sub">Ziektenleer (30), Farmacologie (20), Anesthesie (5), Fysiologie (20), Microbiologie (10), Orale Biologie (15)</div>
+      <div class="ec-nums"><div class="ec-num-badge"><strong>100</strong> mc</div><div class="ec-num-badge">max <strong>20</strong> fout</div></div>
+    </div>
+    <div class="exam-card" onclick="showPage('paro',null)">
+      <div class="ec-icon">🦷</div>
+      <div class="ec-title">Tandheelkunde I</div>
+      <div class="ec-sub">Cariologie (15), Endo (20), Pedo (10), Paro (15), Speeksel (10) + Sociale TH/Ethiek open vragen</div>
+      <div class="ec-nums"><div class="ec-num-badge"><strong>70</strong> mc</div><div class="ec-num-badge">max <strong>14</strong> fout</div></div>
+    </div>
+    <div class="exam-card" onclick="showPage('kinesio',null)">
+      <div class="ec-icon">🔬</div>
+      <div class="ec-title">Tandheelkunde II</div>
+      <div class="ec-sub">Kinesiologie (10), Orale Functieleer (35), MZK (25), Orale Pathologie (15), Orthodontie (15)</div>
+      <div class="ec-nums"><div class="ec-num-badge"><strong>100</strong> mc</div><div class="ec-num-badge">max <strong>20</strong> fout</div></div>
+    </div>
+    <div class="exam-card" onclick="showPage('radio',null)">
+      <div class="ec-icon">📡</div>
+      <div class="ec-title">Radiologie &amp; Wetenschap</div>
+      <div class="ec-sub">Radiologie (20 mc), Statistiek (15 mc), EBM/Methodologie (open vragen)</div>
+      <div class="ec-nums"><div class="ec-num-badge"><strong>35</strong> mc</div><div class="ec-num-badge">max <strong>7</strong> fout</div></div>
+    </div>
+  </div>
+
+  <h3 style="font-size:15px;font-weight:700;margin-bottom:12px;color:var(--gray-700)">⚡ Kritieke getallen</h3>
+  <div class="cheat-grid">
+    <div class="cheat-item"><span class="ci-val">80%</span><span class="ci-key">Slagingsgrens MC</span></div>
+    <div class="cheat-item c-green"><span class="ci-val">20</span><span class="ci-key">Max fouten BM (100 mc)</span></div>
+    <div class="cheat-item c-green"><span class="ci-val">14</span><span class="ci-key">Max fouten THK I (70 mc)</span></div>
+    <div class="cheat-item c-green"><span class="ci-val">20</span><span class="ci-key">Max fouten THK II (100 mc)</span></div>
+    <div class="cheat-item c-green"><span class="ci-val">7</span><span class="ci-key">Max fouten R&amp;W (35 mc)</span></div>
+    <div class="cheat-item c-orange"><span class="ci-val">55pt</span><span class="ci-key">Open vragen weging</span></div>
+  </div>
+  <div class="success-box">💡 <strong>Tip:</strong> Voor een voldoende (6.0) dient minimaal <strong>80%</strong> van de MC-vragen correct beantwoord te worden. Open vragen tellen voor 50% mee bij Tandheelkunde I en Radiologie &amp; Wetenschap.</div>
+
+  <h3 style="font-size:15px;font-weight:700;margin:20px 0 12px;color:var(--gray-700)">📚 Studiemodules</h3>
+  <div class="exam-grid" style="grid-template-columns:repeat(auto-fill,minmax(180px,1fr))">
+    <div class="exam-card" onclick="showPage('paro',null)"><div class="ec-icon">🔴</div><div class="ec-title">Parodontologie</div><div class="ec-sub">DPSI, BOP, classificaties, behandeling</div></div>
+    <div class="exam-card" onclick="showPage('endo',null)"><div class="ec-icon">🔵</div><div class="ec-title">Endodontologie</div><div class="ec-sub">Wortelkanaalbehandeling, trauma, pijn</div></div>
+    <div class="exam-card" onclick="showPage('cario',null)"><div class="ec-icon">🟡</div><div class="ec-title">Cariologie</div><div class="ec-sub">Caries pathologie, preventie, fluoride</div></div>
+    <div class="exam-card" onclick="showPage('pedo',null)"><div class="ec-icon">🟢</div><div class="ec-title">Pedodontologie</div><div class="ec-sub">Kindergebitszorg, melkgebit</div></div>
+    <div class="exam-card" onclick="showPage('basis',null)"><div class="ec-icon">⚕️</div><div class="ec-title">Basis Medisch</div><div class="ec-sub">Farmacologie, microbiologie, fysiologie</div></div>
+    <div class="exam-card" onclick="showPage('radio',null)"><div class="ec-icon">📡</div><div class="ec-title">Radiologie</div><div class="ec-sub">Röntgendiagnostiek, stralingsbescherming</div></div>
+    <div class="exam-card" onclick="showPage('kinesio',null)"><div class="ec-icon">🧠</div><div class="ec-title">Kinesiologie / TMD</div><div class="ec-sub">Kaakgewricht, spierpijn, OSAS</div></div>
+    <div class="exam-card" onclick="showPage('functie',null)"><div class="ec-icon">🦷</div><div class="ec-title">Functieleer / MZK</div><div class="ec-sub">Occlusie, implantologie, prothetiek</div></div>
+    <div class="exam-card" onclick="showPage('statistiek',null)"><div class="ec-icon">📊</div><div class="ec-title">Statistiek</div><div class="ec-sub">Sensitiviteit, specificiteit, NNT</div></div>
+    <div class="exam-card" onclick="showPage('richtlijnen',null)"><div class="ec-icon">📚</div><div class="ec-title">Richtlijnen</div><div class="ec-sub">KIMO, NVvP, KiMo richtlijnen</div></div>
+    <div class="exam-card" onclick="showPage('gesprek',null)"><div class="ec-icon">💬</div><div class="ec-title">CNT Gesprek</div><div class="ec-sub">Communicatie, motiverende gespreksvoering</div></div>
+    <div class="exam-card" onclick="showPage('endo_trauma',null)"><div class="ec-icon">🚑</div><div class="ec-title">Endo Trauma &amp; Pijn</div><div class="ec-sub">Tandtrauma, acuut pijnmanagement</div></div>
+  </div>
+
+  <div class="page-footer">BI Toets Studieplatform by FY · Alle vragen zijn gebaseerd op cikmış sorular (echte examenopgaven) · Aangemaakt 2024</div>
+</div>
+
+<!-- ██████████████████████ PARODONTOLOGIE ██████████████████████ -->
+<div class="page" id="page-paro">
+  <div class="section-hdr">
+    <div class="section-icon si-red">🔴</div>
+    <div><h2>Parodontologie</h2><p>THK I · 15 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('paro','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('paro','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('paro','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('paro','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+
+  <!-- NOTITIES -->
+  <div class="tab-content active" id="paro-notities">
+    <div id="drive-notes-paro"></div>
+    <div class="info-box">
+      <div class="info-box-title">🎯 Kernthema's Parodontologie examen</div>
+      <ul>
+        <li>DPSI (Dutch Periodontal Screening Index) – scoringsysteem en interpretatie</li>
+        <li>PPS (Parodontaal Peilsonde Score) – klinisch peilsonde gebruik</li>
+        <li>BOP (Bleeding on Probing) – significantie, drempelwaarden</li>
+        <li>Classificatie parodontale aandoeningen 2018 (AAP/EFP)</li>
+        <li>Furcatie-betrokkenheid – Hamp-classificatie</li>
+        <li>Antibioticabeleid – Amoxicilline + Metronidazol protocol</li>
+        <li>ANUG/ANUP – acute necrotiserende ulceratieve gingivitis/parodontitis</li>
+        <li>Systemische aandoeningen en parodontitis (diabetes, roken)</li>
+      </ul>
+    </div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-red">Diagnostiek</span>
+        <h3>DPSI – Dutch Periodontal Screening Index</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p>De DPSI is een screeningsinstrument voor parodontale zorg in Nederland, gebaseerd op de CPI (Community Periodontal Index).</p>
+        <table>
+          <tr><th>Score</th><th>Bevinding</th><th>Actie</th></tr>
+          <tr><td><strong>0</strong></td><td>Geen bijzonderheden, geen bloeding</td><td>Geen behandeling nodig</td></tr>
+          <tr><td><strong>1</strong></td><td>Bloeding na sonderen (BOP+)</td><td>Instructie mondhygiëne</td></tr>
+          <tr><td><strong>2</strong></td><td>Subgingivale tandsteen / overhangen</td><td>Verwijderen tandsteen, instructie</td></tr>
+          <tr><td><strong>3</strong></td><td>Pocket 3,5–5,5 mm (zwarte band gedeeltelijk zichtbaar)</td><td>Subgingivale reiniging, her-evaluatie</td></tr>
+          <tr><td><strong>4</strong></td><td>Pocket ≥ 5,5 mm (zwarte band volledig in pocket)</td><td>Uitgebreide behandeling, evt. paro-specialist</td></tr>
+          <tr><td><strong>*</strong></td><td>Furcatie-betrokkenheid, meer dan 7 mm verlies, tandmobiliteit</td><td>Aan score toevoegen, specialistenverwijzing overwegen</td></tr>
+        </table>
+        <div class="info-box" style="margin-top:12px">
+          <div class="info-box-title">Sextanten bij DPSI</div>
+          <ul>
+            <li>6 sextanten: 17-14 | 13-23 | 24-27 | 37-34 | 33-43 | 44-47</li>
+            <li>Per sextant wordt de <strong>hoogste</strong> score geregistreerd</li>
+            <li>Sextant wordt niet gescoord als er minder dan 2 tanden aanwezig zijn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">Classificatie</span>
+        <h3>2018 Classificatie Parodontale Aandoeningen (AAP/EFP)</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p><strong>Gingivale aandoeningen:</strong></p>
+        <ul>
+          <li>Plaquegeïnduceerde gingivitis (reversibel, geen botverlies)</li>
+          <li>Niet-plaquegeïnduceerde gingivale aandoeningen (viraal, bacterieel, schimmel, genetisch)</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Parodontitis – Stadia en Graden:</strong></p>
+        <table>
+          <tr><th>Stadium</th><th>Kenmerk</th><th>Ernst</th></tr>
+          <tr><td>I</td><td>Pocket ≤4 mm, geen furcatie, geen tandverlies</td><td>Licht</td></tr>
+          <tr><td>II</td><td>Pocket 5-6 mm, furcatie klasse I-II, geen tandverlies door paro</td><td>Matig</td></tr>
+          <tr><td>III</td><td>Pocket ≥7 mm, furcatie klasse III, tandverlies ≤4 elementen</td><td>Ernstig</td></tr>
+          <tr><td>IV</td><td>Stadium III + kauwfunctieverlies, masticatieproblemen</td><td>Zeer ernstig</td></tr>
+        </table>
+        <table style="margin-top:10px">
+          <tr><th>Graad</th><th>Progressie</th><th>Risicofactoren</th></tr>
+          <tr><td>A</td><td>Langzaam (&lt;2mm/5j)</td><td>Geen roken, normaal glucose</td></tr>
+          <tr><td>B</td><td>Matig</td><td>&lt;10 sig/dag, HbA1c &lt;7%</td></tr>
+          <tr><td>C</td><td>Snel (≥2mm/5j)</td><td>&gt;10 sig/dag, HbA1c ≥7%, biofilm onvoldoende verklaring</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">Behandeling</span>
+        <h3>Parodontale Behandelfasen</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Fase 1 – Initieel:</strong> Mondhygiëne-instructie, supragin. scaling, eliminatie risicofactoren (roken, diabetes regulatie)</li>
+          <li><strong>Fase 2 – Causaal:</strong> Subgingivaal root planing, SRP (Scaling and Root Planing), eventueel adjuvante antibiotica</li>
+          <li><strong>Her-evaluatie:</strong> 4-8 weken na Fase 2 (wachten op tissue remodeling)</li>
+          <li><strong>Fase 3 – Correctief:</strong> Chirurgie indien residuele pockets ≥6mm na her-evaluatie</li>
+          <li><strong>Fase 4 – Onderhoud (SPT):</strong> Supportive Periodontal Therapy, frequentie afhankelijk van risico</li>
+        </ul>
+        <div class="warn-box">⚠️ <strong>Her-evaluatie:</strong> Altijd 4-8 weken na subgingivale reiniging, VÓÓR beslissing over chirurgie.</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-purple">Antibiotica</span>
+        <h3>Antibioticabeleid bij Parodontitis</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Indicatie:</strong> Agressieve parodontitis (nu: Stadium III/IV Graad C), jonge patiënten, snelle progressie</li>
+          <li><strong>Protocol NVvP:</strong> Amoxicilline 500mg 3x/dag + Metronidazol 500mg 3x/dag, 7 dagen</li>
+          <li><strong>Penicillineallergie:</strong> Metronidazol 500mg 3x/dag monotherapie OF Clindamycine 300mg 3x/dag</li>
+          <li><strong>Timing:</strong> Systemische AB direct na (of tijdens) de subgingivale reiniging (niet als monotherapie)</li>
+          <li><strong>Lokale AB:</strong> Doxycycline gel (Atridox), Metronidazol gel – bij residuele pockets als aanvulling</li>
+        </ul>
+        <div class="danger-box">🚫 AB nooit als vervanging voor mechanische reiniging – altijd gecombineerd!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-red">Acuut</span>
+        <h3>ANUG / ANUP – Acute Necrotiserende Aandoeningen</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>ANUG</strong> (Acute Necrotiserende Ulceratieve Gingivitis): alleen gingiva aangedaan, geen botverlies</li>
+          <li><strong>ANUP</strong> (Acute Necrotiserende Ulceratieve Parodontitis): ook bot- en attachmentverlies</li>
+          <li><strong>Symptomen:</strong> Interdentale necrose (uitgevreten papillen), spontane bloeding, fetor ex ore, pijn, eventueel koorts</li>
+          <li><strong>Predisponerende factoren:</strong> Stress, slechte mondhygiëne, roken, immunosuppressie (HIV!), malnutritie</li>
+          <li><strong>Behandeling:</strong> Voorzichtige debridement, chloorhexidine 0,12-0,2% spoelen, pijnstilling, eventueel Metronidazol 250mg 3x/dag 7 dagen, rookstop</li>
+          <li><strong>Oppassen:</strong> Kies zachtaardige debridement (niet agressief) vanwege pijn en weefselkwetsbaarheid</li>
+        </ul>
+        <div class="success-box">✅ Klassiek examen-hint: jonge man, stress (student), roker → ANUG. Behandeling = GEEN agressieve reiniging, eerst stabilisatie!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-teal">Furcatie</span>
+        <h3>Furcatie-betrokkenheid – Hamp-classificatie</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Klasse</th><th>Sondeerbevinding</th><th>Prognose</th></tr>
+          <tr><td>I</td><td>&lt;3 mm horizontaal in furcatie</td><td>Goed, behandelbaar</td></tr>
+          <tr><td>II</td><td>≥3 mm horizontaal, maar niet door-en-door</td><td>Matig, chirurgie overwegen</td></tr>
+          <tr><td>III</td><td>Door-en-door sondering mogelijk</td><td>Slecht, extractie overwegen</td></tr>
+        </table>
+        <p style="margin-top:10px">Furcatie-betrokkenheid wordt bij DPSI als asterisk (*) genoteerd.</p>
+        <div class="warn-box">⚠️ Molaren bovenkaak: 3 furcaties (mesiobuccaal, distobuccaal, palatinaal). Molaren onderkaak: 2 furcaties (mesiaal, distaal).</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-green">Risicofactoren</span>
+        <h3>Systemische Factoren &amp; Parodontitis</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Roken:</strong> Sterkste modificeerbare risicofactor. Vermindert BOP (maskering!), vermindert angiogenese. DPSI-score kan vals laag lijken.</li>
+          <li><strong>Diabetes mellitus:</strong> Bi-directionele relatie. Slecht gereguleerde DM (HbA1c &gt;7%) → ernstiger parodontitis. Parodontitis behandeling kan HbA1c verbeteren met 0,4%.</li>
+          <li><strong>Medicamenten:</strong> Fenytoïne, ciclosporine, nifedipine → gingivale hyperplasie</li>
+          <li><strong>Zwangerschap:</strong> Hormonale veranderingen → zwangerschapsgingivitis (verhoogde respons op plaque), REVERSIBEL na bevalling</li>
+          <li><strong>Osteoporose:</strong> Indirect risico via verminderde botdensiteit</li>
+          <li><strong>Stress:</strong> Via immunosuppressie en cortisolverhoging</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SAMENVATTING -->
+  <div class="tab-content" id="paro-samenvatting">
+    <h3 style="font-size:15px;font-weight:700;margin-bottom:14px">⚡ Snelle herhaling – Parodontologie</h3>
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Kernpunt</th><th>Status</th></tr>
+      <tr><td>DPSI 0</td><td>Gezond, geen bloeding</td><td><span class="badge-j">OK</span></td></tr>
+      <tr><td>DPSI 1</td><td>Bloeding → mondhygiëne instructie</td><td><span class="badge-ans">MHI</span></td></tr>
+      <tr><td>DPSI 2</td><td>Tandsteen/overhangen → verwijderen</td><td><span class="badge-ans">Scaling</span></td></tr>
+      <tr><td>DPSI 3</td><td>Pocket 3,5-5,5mm → SRP</td><td><span class="badge-ans">SRP</span></td></tr>
+      <tr><td>DPSI 4</td><td>Pocket ≥5,5mm → specialist</td><td><span class="badge-oj">Specialist</span></td></tr>
+      <tr><td>ANUG</td><td>Necrose papillen, pijn, fetor, GEEN bot</td><td><span class="badge-oj">Acuut</span></td></tr>
+      <tr><td>ANUP</td><td>ANUG + botverlies</td><td><span class="badge-oj">Ernstig</span></td></tr>
+      <tr><td>AB beleid</td><td>Amoxicilline 500 + Metronidazol 500, 3x/dag, 7d</td><td><span class="badge-ans">Protocol</span></td></tr>
+      <tr><td>Furcatie II</td><td>≥3mm, niet door-en-door</td><td><span class="badge-ans">Matig</span></td></tr>
+      <tr><td>Furcatie III</td><td>Door-en-door → slechte prognose</td><td><span class="badge-oj">Slecht</span></td></tr>
+      <tr><td>Her-evaluatie</td><td>4-8 weken na subgingivale reiniging</td><td><span class="badge-ans">Timing</span></td></tr>
+      <tr><td>Roken &amp; BOP</td><td>Roken onderdrukt BOP → vals negatief!</td><td><span class="badge-oj">Let op!</span></td></tr>
+    </table>
+    <div class="warn-box" style="margin-top:14px">⚠️ <strong>Veelgemaakte fout:</strong> Roken geeft vals lage BOP – de ernst van parodontitis wordt onderschat bij rokers!</div>
+  </div>
+
+  <!-- CIKMIS SORULAR -->
+  <div class="tab-content" id="paro-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Parodontologie cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Parodontologie çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
+    </div>
+    <div id="set-selector-paro-cikmis"></div>
+    <div id="quiz-container-paro-cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-paro-cikmis', 'paro_cikmis', 'quiz-container-paro-cikmis');
+      });
+    </script>
+  </div>
+
+  <!-- OEFENTOETS -->
+    <div class="tab-content" id="paro-oefen">
+    <div class="info-box">
+      <div class="info-box-title">🤖 Parodontologie AI Oefensets – 10 sets van 10 vragen</div>
+      <ul><li>AI-gegenereerde vragen op examen-niveau · antwoorden worden willekeurig geschud</li></ul>
+    </div>
+    <div id="set-selector-paro"></div>
+    <div id="quiz-container-paro-ai"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-paro', 'paro_ai', 'quiz-container-paro-ai');
+      });
+    </script>
+  </div>
+</div>
+
+<!-- ██████████████████████ ENDODONTOLOGIE ██████████████████████ -->
+<div class="page" id="page-endo">
+  <div class="section-hdr">
+    <div class="section-icon si-blue">🔵</div>
+    <div><h2>Endodontologie</h2><p>THK I · 20 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('endo','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('endo','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('endo','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('endo','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+
+  <!-- NOTITIES -->
+  <div class="tab-content active" id="endo-notities">
+    <div id="drive-notes-endo"></div>
+    <div class="info-box">
+      <div class="info-box-title">🎯 Kernthema's Endodontologie examen</div>
+      <ul>
+        <li>Pulpadiagnose – classificaties (reversibele/irreversibele pulpitis, necrose)</li>
+        <li>Apicale diagnose – symptomatisch/asymptomatisch periapicaal abces, granuloom</li>
+        <li>DETI-score (Dental Emergency Triage Index)</li>
+        <li>Irrigatieprotocol – NaOCl concentratie, EDTA, CHX</li>
+        <li>Obturatie – guttapercha technieken, laterale condensatie</li>
+        <li>Tandtrauma – Andreasen classificatie, replantatie protocol</li>
+        <li>Interne/externe resorptie</li>
+        <li>Endodontisch-parodontale laesies</li>
+      </ul>
+    </div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">Diagnostiek</span>
+        <h3>Pulpa- en Apicale Diagnose</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Diagnose</th><th>Pijn</th><th>Radiologie</th><th>Therapie</th></tr>
+          <tr><td>Reversibele pulpitis</td><td>Kort, stimulus-afhankelijk</td><td>Normaal</td><td>Kaviteitsbehandeling, pulpa-capping</td></tr>
+          <tr><td>Irreversibele pulpitis</td><td>Spontaan, langdurig (ook 's nachts)</td><td>Evt. periapicale verbreding</td><td>Wortelkanaalbehandeling (WKB)</td></tr>
+          <tr><td>Pulpanecrose</td><td>Geen of minimaal</td><td>Periapicale radiolucency</td><td>WKB</td></tr>
+          <tr><td>Sympt. apicaal periodontitis</td><td>Pijn bij percussie/biting</td><td>Periapicale verbreding/lucency</td><td>WKB of herbehandeling</td></tr>
+          <tr><td>Asympt. apicaal periodontitis</td><td>Geen pijn</td><td>Periapicale radiolucency</td><td>WKB</td></tr>
+          <tr><td>Acuut apicaal abces</td><td>Ernstige spontane pijn, zwelling</td><td>Periapicale radiolucency</td><td>Incisie + drainage, AB, WKB</td></tr>
+        </table>
+        <div class="success-box">✅ Percussie-positief + spontane pijn = irreversibele pulpitis of periapicale pathologie → WKB!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">DETI</span>
+        <h3>DETI-score – Dental Emergency Triage Index</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p>De DETI-score wordt gebruikt voor triage van tandheelkundige spoedsituaties.</p>
+        <table>
+          <tr><th>Score</th><th>Urgentie</th><th>Behandeling binnen</th><th>Voorbeelden</th></tr>
+          <tr><td><strong style="color:var(--danger)">1</strong></td><td>Acuut, levensbedreigend</td><td>Direct/Spoedkamer</td><td>Ludwig's angina, ernstige cellulitis met luchtwegproblemen</td></tr>
+          <tr><td><strong style="color:var(--danger)">2</strong></td><td>Urgent</td><td>24 uur</td><td>Acuut apicaal abces met zwelling, ANUG, alveolitis</td></tr>
+          <tr><td><strong style="color:var(--warning)">3</strong></td><td>Semi-urgent</td><td>48-72 uur</td><td>Irreversibele pulpitis (intense pijn), fractuur kroon</td></tr>
+          <tr><td><strong style="color:var(--success)">4</strong></td><td>Niet-urgent</td><td>Week</td><td>Gebroken prothese, subacute klachten</td></tr>
+        </table>
+        <div class="warn-box">⚠️ Ludwig's angina (submandibulaire cellulitis) = DETI 1! Direct ziekenhuisopname voor luchtwegbewaking.</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-teal">Irrigatie</span>
+        <h3>Irrigatieprotocol WKB</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>NaOCl (Natriumhypochloriet):</strong> Gouden standaard irrigans. Werkt antimicrobieel EN lost organisch weefsel op. Concentratie: 0,5–5,25%. In NL standaard 2,5-3%.</li>
+          <li><strong>EDTA (Ethyleendiaminetetraazijnzuur):</strong> Chelator voor anorganisch weefsel (smear layer verwijdering). 17% EDTA, spoelen 1 minuut als afsluitirrigation.</li>
+          <li><strong>CHX (Chloorhexidine):</strong> 2% CHX als alternatief, breedspectrum antisepticum. NIET combineren met NaOCl (precipitaat!).</li>
+          <li><strong>Volgorde:</strong> NaOCl (tijdens instrumentatie) → EDTA (smear layer) → NaOCl (eindafspoelingen)</li>
+          <li><strong>Passieve ultrasonische irrigatie (PUI):</strong> Verbetert penetratie irrigans in laterale kanaaltjes</li>
+        </ul>
+        <div class="danger-box">🚫 NaOCl + CHX = bruinzwart precipitaat (parachloraniline)! Nooit combineren zonder spoeling tussenin!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-purple">Obturatie</span>
+        <h3>Obturatie – Afdichting Wortelkanaal</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Guttapercha:</strong> Standaard obturatiemedium. Thermisch plastisch, biocompatibel.</li>
+          <li><strong>Laterale condensatie:</strong> Klassieke techniek. Masterpoint + accessory points + sealer.</li>
+          <li><strong>Warme verticale condensatie (WVC):</strong> Betere aanpassing aan kanaalanatomie, minder lekkage. Obtura/Calamus systeem.</li>
+          <li><strong>Sealer:</strong> Noodzakelijk voor dichte afsluiting. ZnO-eugenol, epoxy resin (AH Plus), bioceramic sealers.</li>
+          <li><strong>Werkhoogte:</strong> 0,5-1mm van radiografisch apex. Bevestigd met apex-locator + röntgenfoto.</li>
+          <li><strong>Smear layer:</strong> Verwijdering met EDTA verbetert sealeradhesie.</li>
+        </ul>
+        <div class="info-box">
+          <div class="info-box-title">Obturatiedoelen</div>
+          <ul>
+            <li>Hermetische afsluiting apicaal, lateraal en coronaal</li>
+            <li>Voorkoming herbesmetting van gereinigd kanaal</li>
+            <li>Optimum = tot 0,5-1mm van röntgenapex</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-red">Trauma</span>
+        <h3>Tandtrauma – Andreasen Classificatie</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Type</th><th>Omschrijving</th><th>Behandeling</th></tr>
+          <tr><td>Concussie</td><td>Geen verplaatsing, percussie-gevoelig</td><td>Observatie, zachte kost</td></tr>
+          <tr><td>Subluxatie</td><td>Abnormale mobiliteit, geen verplaatsing</td><td>Spalken 2 weken, controle</td></tr>
+          <tr><td>Extrusie</td><td>Partiële avulsie, tand verlengd</td><td>Repositie, spalken 2-4 weken</td></tr>
+          <tr><td>Laterale luxatie</td><td>Laterale verplaatsing + alveolaire fractuur</td><td>Repositie, spalken 4 weken</td></tr>
+          <tr><td>Intrusie</td><td>Tand in alveol gedreven (ergste)</td><td>Spontane heruitbraak (bij kinderen) of orthodontische/chirurgische repositie</td></tr>
+          <tr><td>Avulsie</td><td>Tand volledig uit alveol</td><td>Replantatie zo snel mogelijk!</td></tr>
+        </table>
+        <div class="success-box">✅ <strong>Replantatie protocol:</strong><br>
+          1. Oppakken aan kroon (NIET aan wortel aanraken!)<br>
+          2. Spoelen met fysiologisch zout<br>
+          3. Replantatie op locatie of bewaren in: melk &gt; fysiologisch zout &gt; speeksel &gt; water<br>
+          4. Spalken 7-10 dagen (flexibele spalk)<br>
+          5. Antibiotica: Doxycycline 100mg 2x/dag 7 dagen (vermindert resorptie)</div>
+        <div class="warn-box">⚠️ Droge bewaartijd &gt;60 min → slechte prognose, PDL-cellen zijn afgestorven. Tand behandelen als ankylosegeval.</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-green">Resorptie</span>
+        <h3>Interne en Externe Resorptie</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th></th><th>Interne resorptie</th><th>Externe resorptie</th></tr>
+          <tr><td>Oorsprong</td><td>Van pulpa binnenuit</td><td>Van periodontaal ligament buitenaf</td></tr>
+          <tr><td>Röntgen</td><td>Ronde, symmetrische uitbreiding kanaal</td><td>Asymmetrisch, onregelmatig</td></tr>
+          <tr><td>Oorzaak</td><td>Chronische pulpitis, trauma</td><td>Trauma, orthodontie, druk</td></tr>
+          <tr><td>Behandeling</td><td>WKB (stopt resorptie)</td><td>Afhankelijk van type (invasieve cervicale resorptie = MTA)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">Perio-Endo</span>
+        <h3>Endodontisch-Parodontale Laesies</h3>
+        <span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Type</th><th>Primaire oorzaak</th><th>Behandeling</th></tr>
+          <tr><td>Primair endodontisch</td><td>Pulpanecrose → drainageweg via paro</td><td>WKB, goed herstel verwacht</td></tr>
+          <tr><td>Primair parodontaal</td><td>Paro-destruktie → apicale betrokkenheid</td><td>Paro-behandeling eerst</td></tr>
+          <tr><td>Gecombineerd</td><td>Beide aandoeningen onafhankelijk aanwezig</td><td>Beide behandelen, prognose matig</td></tr>
+        </table>
+        <div class="info-box">
+          <div class="info-box-title">Vitaliteitstest essentieel!</div>
+          <ul>
+            <li>Primair endo: pulpatest negatief, smalere sinus tractus van apex</li>
+            <li>Primair paro: pulpatest positief, brede tandvleessonde tractus van margo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SAMENVATTING -->
+  <div class="tab-content" id="endo-samenvatting">
+    <h3 style="font-size:15px;font-weight:700;margin-bottom:14px">⚡ Snelle herhaling – Endodontologie</h3>
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Kernpunt</th><th>Let op</th></tr>
+      <tr><td>Reversibele pulpitis</td><td>Kort, stimulus-afhankelijk</td><td><span class="badge-j">WKB niet nodig</span></td></tr>
+      <tr><td>Irreversibele pulpitis</td><td>Spontaan, langdurig</td><td><span class="badge-oj">WKB noodzakelijk</span></td></tr>
+      <tr><td>DETI 1</td><td>Ludwig's angina – direct OK</td><td><span class="badge-oj">Levensbedreigend</span></td></tr>
+      <tr><td>DETI 2</td><td>Acuut abces – 24 uur</td><td><span class="badge-oj">Urgent</span></td></tr>
+      <tr><td>NaOCl concentratie</td><td>0,5–5,25% (NL: 2,5-3%)</td><td><span class="badge-ans">Standaard irrigans</span></td></tr>
+      <tr><td>NaOCl + CHX</td><td>NOOIT combineren!</td><td><span class="badge-oj">Precipitaat!</span></td></tr>
+      <tr><td>EDTA</td><td>Smear layer verwijdering, chelator</td><td><span class="badge-ans">Eindirrigatie</span></td></tr>
+      <tr><td>Avulsie replantatie</td><td>Aanpakken bij kroon, melk bewaren</td><td><span class="badge-ans">&lt;60 min droog</span></td></tr>
+      <tr><td>Intrusie kind</td><td>Spontane heruitbraak afwachten</td><td><span class="badge-j">Kinderen &lt;12j</span></td></tr>
+      <tr><td>Obturatie hoogte</td><td>0,5-1 mm van röntgenapex</td><td><span class="badge-ans">Werkhoogte</span></td></tr>
+      <tr><td>Interne resorptie</td><td>Kanaal uitbreidend, symmetrisch</td><td><span class="badge-ans">WKB stopt het</span></td></tr>
+    </table>
+  </div>
+
+  <!-- CIKMIS -->
+  <div class="tab-content" id="endo-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Endodontologie cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Endodontologie çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
+    </div>
+    <div id="set-selector-endo-cikmis"></div>
+    <div id="quiz-container-endo-cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-endo-cikmis', 'endo_cikmis', 'quiz-container-endo-cikmis');
+      });
+    </script>
+  </div>
+
+  <!-- OEFEN -->
+    <div class="tab-content" id="endo-oefen">
+    <div class="info-box">
+      <div class="info-box-title">🤖 Endodontologie AI Oefensets – 10 sets van 10 vragen</div>
+      <ul><li>AI-gegenereerde vragen op examen-niveau · antwoorden worden willekeurig geschud</li></ul>
+    </div>
+    <div id="set-selector-endo"></div>
+    <div id="quiz-container-endo-ai"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-endo', 'endo_ai', 'quiz-container-endo-ai');
+      });
+    </script>
+  </div>
+</div>
+
+<!-- ██████ CARIOLOGIE ██████ -->
+<div class="page" id="page-cario">
+  <div class="section-hdr">
+    <div class="section-icon si-orange">🟡</div>
+    <div><h2>Cariologie</h2><p>THK I · 15 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('cario','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('cario','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('cario','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('cario','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+  <div class="tab-content active" id="cario-notities">
+    <div id="drive-notes-cario"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Kernthema's Cariologie</div>
+    <ul>
+      <li>Caries pathogenese – Keyes-driehoek (bacteriën, substraat, gastheer, tijd)</li>
+      <li>ICDAS-classificatie (International Caries Detection and Assessment System)</li>
+      <li>Fluoride mechanisme, effectiviteit, toxico-therapie</li>
+      <li>Primaire, secundaire en tertiaire preventie</li>
+      <li>Sealants – indicaties bij kinderen</li>
+      <li>Minimally invasive dentistry (MID) – ICON, infiltratie</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">Pathogenese</span><h3>Cariespathogenese – Keyes Model</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p>Caries is een multifactorieel infectieuze aandoening. De Keyes-driehoek beschrijft de drie factoren die tegelijk aanwezig moeten zijn:</p>
+        <ul>
+          <li><strong>Micro-organismen:</strong> S. mutans (initiatief), Lactobacillen (progressie), Actinomyces (wortelcaries)</li>
+          <li><strong>Substraat:</strong> Vergistbare koolhydraten (sucrose = meest cariogeen)</li>
+          <li><strong>Gastheer:</strong> Tandoppervlak, speekselkwaliteit, immuunrespons</li>
+          <li><strong>Tijd:</strong> Frequentie en duur van zuurattack</li>
+        </ul>
+        <p>Kritieke pH: <strong>5,5</strong> voor glazuur, <strong>6,0-6,7</strong> voor dentine (demineralisatie begint bij lagere pH in dentine)</p>
+        <div class="warn-box">⚠️ Stephan-curve: Na suikerinname daalt plaque-pH snel (&lt;2 min) en herstel duurt 20-30 minuten. Frequentie inname is cruciale risicofactor!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">ICDAS</span><h3>ICDAS Classificatie (Scores 0-6)</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Score</th><th>Bevinding</th><th>Klinisch beeld</th><th>Beleid</th></tr>
+          <tr><td>0</td><td>Gezond oppervlak</td><td>Geen caries</td><td>Preventie</td></tr>
+          <tr><td>1</td><td>Wit vlekje (droog)</td><td>Initiële laesie, alleen zichtbaar na drogen</td><td>Remineralisatie</td></tr>
+          <tr><td>2</td><td>Wit/bruin vlekje (nat)</td><td>Zichtbaar op nat vlak</td><td>Remineralisatie + monitoring</td></tr>
+          <tr><td>3</td><td>Lokale glazuurbreuk</td><td>Geen zichtbaar dentine</td><td>Remineralisatie of minimale interventie</td></tr>
+          <tr><td>4</td><td>Donkere schaduw door dentine</td><td>Dentine zichtbaar door glazuur</td><td>Restauratieve interventie</td></tr>
+          <tr><td>5</td><td>Caviteit met zichtbaar dentine</td><td>Minder dan helft oppervlak aangetast</td><td>Restauratie</td></tr>
+          <tr><td>6</td><td>Uitgebreide caviteit</td><td>Meer dan helft aangetast</td><td>Complexe restauratie</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-green">Fluoride</span><h3>Fluoride – Mechanisme en Toepassingen</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Mechanisme:</strong> Fluorapatiet (FA) vormt resistenter tandoppervlak dan hydroxyapatiet (HA). FA lost minder op bij lage pH (5,5 vs 5,5 HA).</li>
+          <li><strong>Remineralisatie:</strong> Fluoride bevordert neerslag van calcium en fosfaat. Effectief bij vroege laesies (ICDAS 1-2).</li>
+          <li><strong>Antibacterieel:</strong> Remt enolase-enzym in S. mutans → vermindert zuurproductie.</li>
+          <li><strong>Pre-eruptief effect:</strong> Systemisch fluoride (water, tabletten) werkt pre-eruptief op tandkroonvorming.</li>
+          <li><strong>Post-eruptief topicaal:</strong> Tandpasta (1000-1500 ppm), lak (22.600 ppm), gel</li>
+          <li><strong>Tandpasta kinderen:</strong> &lt;3 jaar: 500 ppm, 3-6 jaar: 1000 ppm, &gt;6 jaar: 1450 ppm</li>
+        </ul>
+        <div class="danger-box">🚫 Fluorose: chronische overmaat systemisch fluoride tijdens tandvorming → witte of bruine vlekken. Cosmetic concern, niet functioneel schadelijk.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="cario-samenvatting">
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Kernpunt</th><th>Status</th></tr>
+      <tr><td>Kritieke pH glazuur</td><td>pH 5,5</td><td><span class="badge-ans">Belangrijk!</span></td></tr>
+      <tr><td>S. mutans</td><td>Initiatie caries</td><td><span class="badge-ans">Bacterie</span></td></tr>
+      <tr><td>Lactobacillus</td><td>Progressie caries</td><td><span class="badge-ans">Bacterie</span></td></tr>
+      <tr><td>ICDAS 1-2</td><td>Remineralisatie mogelijk</td><td><span class="badge-j">Niet kaviteit!</span></td></tr>
+      <tr><td>ICDAS 5-6</td><td>Restauratie noodzakelijk</td><td><span class="badge-oj">Invasief</span></td></tr>
+      <tr><td>Tandpasta &lt;3j</td><td>500 ppm fluoride</td><td><span class="badge-ans">Laag</span></td></tr>
+      <tr><td>Tandpasta &gt;6j</td><td>1450 ppm fluoride</td><td><span class="badge-ans">Normaal</span></td></tr>
+      <tr><td>Fluoridetablet</td><td>Pre-eruptief werkzaam</td><td><span class="badge-ans">Systemisch</span></td></tr>
+    </table>
+  </div>
+  <div class="tab-content" id="cario-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Cariologie çıkmış soru setleri</div>
+      <ul><li>Google Drive arşivinden aktarılan yıl/dosya setleri · antwoorden worden willekeurig geschud</li></ul>
+    </div>
+    <div id="set-selector-cario-cikmis"></div>
+    <div id="quiz-container-cario_cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-cario-cikmis', 'cario_cikmis', 'quiz-container-cario_cikmis');
+      });
+    </script>
+  </div>
+    <div class="tab-content" id="cario-oefen">
+    <div class="info-box">
+      <div class="info-box-title">🤖 Cariologie AI Oefensets – 10 sets van 10 vragen</div>
+      <ul><li>AI-gegenereerde vragen op examen-niveau · antwoorden worden willekeurig geschud</li></ul>
+    </div>
+    <div id="set-selector-cario"></div>
+    <div id="quiz-container-cario-ai"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-cario', 'cario_ai', 'quiz-container-cario-ai');
+      });
+    </script>
+  </div>
+</div>
+
+<!-- ██████ PEDODONTOLOGIE ██████ -->
+<div class="page" id="page-pedo">
+  <div class="section-hdr">
+    <div class="section-icon si-green">🟢</div>
+    <div><h2>Pedodontologie</h2><p>THK I · 10 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('pedo','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('pedo','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('pedo','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('pedo','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+  <div class="tab-content active" id="pedo-notities">
+    <div id="drive-notes-pedo"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Kernthema's Pedodontologie</div>
+    <ul>
+      <li>Tanddoorbraak – tijdschema melkgebit en blijvend gebit</li>
+      <li>Molentanden (eerste blijvende molaar) – belang en tijdstip doorbraak</li>
+      <li>Pulpatherapie melkgebit: pulpotomie vs. pulpectomie</li>
+      <li>Ruimtemanagement – ruimtebewaarder na vroegtijdig tandverlies</li>
+      <li>ECC (Early Childhood Caries) – risicofactoren, preventie</li>
+      <li>Trauma bij melktanden – verschil behandeling met blijvend gebit</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-green">Doorbraak</span><h3>Tanddoorbraak – Tijdschema</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Tand</th><th>Melkgebit</th><th>Blijvend gebit</th></tr>
+          <tr><td>Centrale incisief</td><td>6-10 mnd (onder), 8-12 mnd (boven)</td><td>6-8 jaar (onder), 7-9 jaar (boven)</td></tr>
+          <tr><td>Laterale incisief</td><td>9-16 mnd</td><td>7-9 jaar (onder), 8-11 jaar (boven)</td></tr>
+          <tr><td>Cuspidaat</td><td>16-23 mnd</td><td>9-12 jaar</td></tr>
+          <tr><td>1e premolaar/melkmolaar</td><td>12-19 mnd (1e), 25-33 mnd (2e)</td><td>10-12 jaar</td></tr>
+          <tr><td>1e blijvende molaar</td><td>–</td><td><strong>6-7 jaar (6-jaars molaar!)</strong></td></tr>
+          <tr><td>2e molaar</td><td>–</td><td>11-13 jaar</td></tr>
+          <tr><td>3e molaar (verstandskies)</td><td>–</td><td>17-25 jaar</td></tr>
+        </table>
+        <div class="success-box">✅ De 6-jaars molaar (1e blijvende molaar) is de EERSTE blijvende tand! Doorbraak rond 6 jaar. Klinisch super belangrijk: sealant preventie indicatie!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">Pulpatherapie</span><h3>Pulpatherapie Melkgebit</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Procedure</th><th>Indicatie</th><th>Techniek</th></tr>
+          <tr><td>Directe pulpacapping</td><td>Kleine mechanische/carieuze blootstelling in vitale pulpa</td><td>MTA of Ca(OH)₂ op pulpa, restauratie</td></tr>
+          <tr><td>Pulpotomie</td><td>Carieuze blootstelling kroonpulpa, radiculaire pulpa nog vitaal</td><td>Verwijdering kroonpulpa, MTA/Formocresol op amputatiestompje</td></tr>
+          <tr><td>Pulpectomie</td><td>Irreversibele pulpitis of necrose, tand heeft nog fysiologische waarde</td><td>Volledige kanaalbehandeling, ZnO-eugenol obturatie</td></tr>
+        </table>
+        <div class="warn-box">⚠️ Formocresol wordt minder gebruikt vanwege toxiciteit. MTA is nu voorkeur bij pulpotomie melkgebit.</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">ECC</span><h3>Early Childhood Caries (ECC)</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p>ECC = aanwezigheid van carieuze laesies, geëxtraheerde (door caries) of gevulde tandoppervlakken bij een kind ≤71 maanden oud.</p>
+        <ul>
+          <li><strong>Risicofactoren:</strong> Flessenmelk/sap 's nachts, langdurig borstvoeding, suikerinname, S. mutans transmissie van moeder, lage SES</li>
+          <li><strong>Patroon:</strong> Bovenste snijtanden eerst (contact met fles/borst), ondersnijtanden relatief gespaard</li>
+          <li><strong>Ernstige ECC (S-ECC):</strong> &lt;3 jaar: elk teken van gladoppervlaktecaries. 3-5 jaar: ≥4 aangetaste gladde vlakken</li>
+          <li><strong>Preventie:</strong> Geen fles 's nachts na 12 maanden, fluoride tandpasta na 1e tand, eerste tandartsbezoek bij 1 jaar</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="pedo-samenvatting">
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Kernpunt</th></tr>
+      <tr><td>6-jaars molaar</td><td>Eerste blijvende tand, doorbraak 6-7 jaar</td></tr>
+      <tr><td>Pulpotomie melkgebit</td><td>Kroonpulpa verwijdering, MTA op amputatiestompje</td></tr>
+      <tr><td>ECC definitie</td><td>Caries &lt;71 maanden (≤5 jaar)</td></tr>
+      <tr><td>ECC patroon</td><td>Bovenste snijtanden eerst</td></tr>
+      <tr><td>Fluoride &lt;3j</td><td>500 ppm, rijstkorrelgrootte</td></tr>
+      <tr><td>Sealant indicatie</td><td>6-jaars molaar bij hoog-risico kind zodra tand doorgebroken</td></tr>
+      <tr><td>Avulsie melktand</td><td>GEEN replantatie (risico op ankylosis + schade blijvende tand)</td></tr>
+    </table>
+    <div class="danger-box">🚫 <strong>Belangrijk:</strong> Bij avulsie van een melktand: NOOIT replantatie! Risico op ankylosis en schade aan het onderliggende blijvende tandkiem.</div>
+  </div>
+  <div class="tab-content" id="pedo-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Pedodontologie cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Pedodontologie çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
+    </div>
+    <div id="set-selector-pedo-cikmis"></div>
+    <div id="quiz-container-pedo-cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-pedo-cikmis', 'pedo_cikmis', 'quiz-container-pedo-cikmis');
+      });
+    </script>
+  </div>
+  <div class="tab-content" id="pedo-oefen">
+    <div class="quiz-controls">
+      <button class="btn btn-primary" onclick="startQuiz('pedo_oefen', 'quiz-container-pedo_oefen')">▶ Start oefentoets (AI)</button>
+      <button class="btn btn-secondary" onclick="resetQuiz('pedo_oefen', 'quiz-container-pedo_oefen')">↺ Opnieuw</button>
+      
+    </div>
+    
+    <div id="quiz-container-pedo_oefen"></div>
+  </div>
+</div>
+
+<!-- ██████ SPEEKSEL & ORALE BIOLOGIE ██████ -->
+<div class="page" id="page-speeksel">
+  <div class="section-hdr">
+    <div class="section-icon si-teal">💧</div>
+    <div><h2>Speeksel &amp; Orale Biologie</h2><p>THK I · 10 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('speeksel','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('speeksel','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('speeksel','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('speeksel','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+  <div class="tab-content active" id="speeksel-notities">
+    <div id="drive-notes-speeksel"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Kernthema's Speeksel &amp; Orale Biologie</div>
+    <ul>
+      <li>Speekselklieren – anatomie, secretie types</li>
+      <li>Speekselsamenstelling – functies van componenten</li>
+      <li>Xerostomie – oorzaken, gevolgen, behandeling</li>
+      <li>Sjögren-syndroom – primair vs. secundair</li>
+      <li>Orale microbioom</li>
+      <li>Glazuurmineralisatie en tandvorming</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-teal">Speekselklieren</span><h3>Speekselklieren – Anatomie en Functies</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Klier</th><th>Type secretie</th><th>Bijdrage</th><th>Innervatie</th></tr>
+          <tr><td>Glandula parotis</td><td>Serous (waterig)</td><td>~25% volume, meeste amylase</td><td>N. IX (glossopharyngeus)</td></tr>
+          <tr><td>Glandula submandibularis</td><td>Gemengd (serous + muceus)</td><td>~60-65% volume</td><td>N. VII (chorda tympani)</td></tr>
+          <tr><td>Glandula sublingualis</td><td>Muceus</td><td>~7-8% volume, IgA rijkst</td><td>N. VII (chorda tympani)</td></tr>
+          <tr><td>Kleine speekselklieren</td><td>Voornamelijk muceus</td><td>~8% volume, continu</td><td>Autonoom</td></tr>
+        </table>
+        <p style="margin-top:10px"><strong>Speekselfuncties:</strong></p>
+        <ul>
+          <li>Antimicrobieel: IgA, lysozym, lactoferrine, peroxidases</li>
+          <li>Buffering: bicarbonaat systeem (pH handhaven)</li>
+          <li>Remineralisatie: calcium, fosfaat, statistenproteïnen</li>
+          <li>Spijsvertering: amylase (zetmeel afbraak)</li>
+          <li>Smering/bescherming: mucines</li>
+          <li>Wondgenezing: EGF (Epidermal Growth Factor)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">Xerostomie</span><h3>Xerostomie – Droge Mond</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p><strong>Definitie:</strong> Subjectieve klacht van droge mond. Hyposalvatie = objectief verminderde speekselproductie (&lt;0,1 ml/min rustspeeksel, &lt;0,7 ml/min gestimuleerd).</p>
+        <ul>
+          <li><strong>Oorzaken medicamenteus:</strong> Anticholinergica, antidepressiva (TCA's, SSRI), antihypertensiva, diuretica, antihistaminica (meest voorkomende oorzaak)</li>
+          <li><strong>Oorzaken ziekte:</strong> Sjögren-syndroom, diabetes, HIV, depressie</li>
+          <li><strong>Oorzaken iatrogeen:</strong> Bestraling hoofd-halsgebied (glandula parotis gevoelig!)</li>
+          <li><strong>Gevolgen:</strong> Verhoogd cariesrisico, dysfagie, dysartrie, smaakstoornis, mondinfecties (Candida)</li>
+          <li><strong>Behandeling:</strong> Speekselstimulerend (pilocarpine, kauwgom), speekselsubstituten, fluoride preventie, Candida behandeling</li>
+        </ul>
+        <div class="warn-box">⚠️ Sjögren-syndroom primair: droge ogen + droge mond (sicca complex). Secundair: sicca + reumatoïde artritis of andere auto-immuunziekte.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="speeksel-samenvatting">
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Kernpunt</th></tr>
+      <tr><td>Grootste speekselklier</td><td>Glandula parotis (25%, meeste amylase)</td></tr>
+      <tr><td>Meeste bijdrage volume</td><td>Glandula submandibularis (60-65%)</td></tr>
+      <tr><td>Meeste IgA</td><td>Glandula sublingualis</td></tr>
+      <tr><td>Hyposalvatie</td><td>&lt;0,1 ml/min rust, &lt;0,7 ml/min gestimuleerd</td></tr>
+      <tr><td>Meest voorkomende xerostomie oorzaak</td><td>Medicamenten (anticholinergica)</td></tr>
+      <tr><td>Sjögren primair</td><td>Droge ogen + droge mond</td></tr>
+      <tr><td>Sjögren secundair</td><td>Sicca + auto-immuunziekte (bv. RA)</td></tr>
+      <tr><td>Speekselbuffer</td><td>Bicarbonaat systeem</td></tr>
+    </table>
+  </div>
+  <div class="tab-content" id="speeksel-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Speeksel & Orale Biologie cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Speeksel çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
+    </div>
+    <div id="set-selector-speeksel-cikmis"></div>
+    <div id="quiz-container-speeksel-cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-speeksel-cikmis', 'speeksel_cikmis', 'quiz-container-speeksel-cikmis');
+      });
+    </script>
+  </div>
+  <div class="tab-content" id="speeksel-oefen">
+    <div class="quiz-controls">
+      <button class="btn btn-primary" onclick="startQuiz('speeksel_oefen', 'quiz-container-speeksel_oefen')">▶ Start oefentoets (AI)</button>
+      <button class="btn btn-secondary" onclick="resetQuiz('speeksel_oefen', 'quiz-container-speeksel_oefen')">↺ Opnieuw</button>
+      
+    </div>
+    
+    <div id="quiz-container-speeksel_oefen"></div>
+  </div>
+</div>
+
+<!-- ██████ SOCIALE TH / ETHIEK ██████ -->
+<div class="page" id="page-sociale">
+  <div class="section-hdr">
+    <div class="section-icon si-purple">🤝</div>
+    <div><h2>Sociale Tandheelkunde &amp; Ethiek</h2><p>THK I · Open vragen (55 punten) · Slagingsgrens 55%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('sociale','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('sociale','oefen',this)">📝 Oefenvragen</button>
+  </div>
+  <div class="tab-content active" id="sociale-notities">
+    <div id="drive-notes-sociale"></div>
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-purple">Ethiek</span><h3>Ethische Principes in de Tandheelkunde</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Autonomie:</strong> Patiënt heeft recht op zelfbeschikking. Informed consent is essentieel voor elke behandeling.</li>
+          <li><strong>Beneficence:</strong> Tandarts handelt in het belang van de patiënt (weldoen).</li>
+          <li><strong>Non-maleficence:</strong> Geen schade toebrengen. "Primum non nocere".</li>
+          <li><strong>Rechtvaardigheid:</strong> Eerlijke verdeling van zorg, geen discriminatie.</li>
+          <li><strong>Vertrouwelijkheid (Privacy):</strong> Beroepsgeheim, AVG (GDPR).</li>
+        </ul>
+        <div class="warn-box">⚠️ Informed consent = patiënt begrijpt de informatie, is wilsbekwaam, geeft vrijwillig toestemming. Bij minderjarigen: ouders/voogd toestemming + kind informeren.</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">BIG</span><h3>BIG-registratie en Tuchtrecht</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>BIG-register:</strong> Wet op de Beroepen in de Individuele Gezondheidszorg. Tandartsen moeten geregistreerd zijn voor beschermd beroepstitel.</li>
+          <li><strong>Herregistratie:</strong> Elke 5 jaar, vereist 3.360 uur werkervaring in de afgelopen 5 jaar.</li>
+          <li><strong>Tuchtcollege:</strong> Regionaal (Eerste aanleg) en Centraal Tuchtcollege (beroep). Maatregelen: waarschuwing, berisping, geldboete, schorsing, doorhaling.</li>
+          <li><strong>WGBO:</strong> Wet Geneeskundige Behandelingsovereenkomst – regelt rechten/plichten patiënt en hulpverlener.</li>
+          <li><strong>Klachtencommissie:</strong> Eerste stap bij klacht (informeler dan tuchtcollege).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">Preventie</span><h3>Preventie – Sociaal Tandheelkundige Aspecten</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Primaire preventie:</strong> Voorkomen ziekte (fluoride, sealants, voedingsadvies)</li>
+          <li><strong>Secundaire preventie:</strong> Vroege opsporing en behandeling (screening, röntgen)</li>
+          <li><strong>Tertiaire preventie:</strong> Beperken gevolgen (prothese na tandverlies)</li>
+          <li><strong>Health Belief Model:</strong> Gedragsverandering afhankelijk van gepercipieerde gevoeligheid, ernst, voordelen en barrières</li>
+          <li><strong>Motivational Interviewing (MI):</strong> Niet-directieve gespreksvoering. OARS: Open vragen, Affirmatie, Reflectie, Samenvatten</li>
+          <li><strong>Sociaaleconomische ongelijkheid:</strong> Lagere SES = hogere cariesprevalentie, minder zorggebruik</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="sociale-oefen">
+    <div class="info-box">
+      <div class="info-box-title">📝 Sociale TH / Ethiek çıkmış soru setleri</div>
+      <ul><li>Drive'daki Ethiek dosyalarından aktarılan MC setleri</li></ul>
+    </div>
+    <div id="set-selector-sociale-cikmis"></div>
+    <div id="quiz-container-sociale_cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-sociale-cikmis', 'sociale_cikmis', 'quiz-container-sociale_cikmis');
+      });
+    </script>
+    <h3 style="font-size:15px;font-weight:700;margin-bottom:14px">📝 Open vragen – Ethiek &amp; Sociale TH</h3>
+    <div class="casus-card">
+      <div class="casus-label">Oefenvraag 1</div>
+      <div class="casus-text">Een 16-jarige patiënt komt voor een consult zonder zijn ouders. Hij vraagt om een tand te laten trekken. Hoe gaat u hiermee om?</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Wat zijn de wettelijke verplichtingen m.b.t. toestemming?</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">16-jarigen hebben zelfstandig toestemmingsrecht (WGBO art. 7:447). Geen oudertoestemming nodig, tenzij de beslissing ingrijpend is of niet in het belang van de minderjarige is. De tandarts moet beoordelen of de patiënt wilsbekwaam is en voldoende geïnformeerd toestemming kan geven.</div>
+      </div>
+    </div>
+    <div class="casus-card">
+      <div class="casus-label">Oefenvraag 2</div>
+      <div class="casus-text">U ontdekt tijdens behandeling dat uw patiënt vermoedelijk slachtoffer is van huiselijk geweld. Wat zijn uw verplichtingen?</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Meldcode en beroepsgeheim</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">Tandartsen zijn verplicht de Meldcode Huiselijk Geweld te gebruiken. Stappen: signaleren → collegiale consultatie (KNMT) → contact met patiënt → overleg Veilig Thuis (advies) → melden indien nodig. Beroepsgeheim kan doorbroken worden bij ernstige gevaar voor leven. Melden bij Veilig Thuis is geen verplichting maar mede afhankelijk van weging van belangen.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ██████ KINESIOLOGIE / TMD ██████ -->
+<div class="page" id="page-kinesio">
+  <div class="section-hdr">
+    <div class="section-icon si-purple">🧠</div>
+    <div><h2>Kinesiologie / TMD / OSAS</h2><p>THK II · 10 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('kinesio','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('kinesio','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('kinesio','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('kinesio','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+  <div class="tab-content active" id="kinesio-notities">
+    <div id="drive-notes-kinesio"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Kernthema's Kinesiologie / TMD</div>
+    <ul>
+      <li>Kaakgewricht (TMJ) anatomie – condylus, discus, bilaminaire zone</li>
+      <li>Kaakbewegingen – opening, protrusie, laterotrusion (Bennett beweging)</li>
+      <li>CMD (Craniomandibulaire Dysfunctie) – diagnostiek en behandeling</li>
+      <li>Bruxisme – bruxisme slaap vs. wakker, epidemiologie</li>
+      <li>OSAS (Obstructief Slaapapneu Syndroom) – mandibulaire repositie apparaat</li>
+      <li>Trigeminale neuralgieën en aangezichtspijnen</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-purple">Anatomie</span><h3>TMJ Anatomie en Bewegingen</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p><strong>Componenten TMJ:</strong></p>
+        <ul>
+          <li><strong>Condylus mandibulae:</strong> Convex, bedekt met fibreuze kraakbeen (niet hyaliene kraakbeen!)</li>
+          <li><strong>Discus articularis:</strong> Fibrocartilagineuse schijf, verdeelt gewrichtsholte in bovenste (translatie) en onderste (rotatie) kompartiment</li>
+          <li><strong>Fossa mandibularis + tuberculum articulare:</strong> Ontvangst condylus</li>
+          <li><strong>Ligamenten:</strong> Lig. temporomandibulare (lateraal), Lig. sphenomandibulare, Lig. stylomandibulare</li>
+          <li><strong>Bilaminaire zone:</strong> Posterior aan discus, rijkelijk gevasculariseerd en geïnnerveerd</li>
+        </ul>
+        <table style="margin-top:10px">
+          <tr><th>Beweging</th><th>Gewricht</th><th>Spieren</th></tr>
+          <tr><td>Mondopening</td><td>Rotatiegewricht (onderste) + translatie (bovenste)</td><td>M. pterygoideus lateralis (inf. kop), suprahyoidale mm.</td></tr>
+          <tr><td>Sluiting</td><td>Omgekeerd</td><td>M. masseter, M. temporalis, M. pterygoideus medialis</td></tr>
+          <tr><td>Protrusie</td><td>Bilateraal translatie</td><td>M. pterygoideus lateralis (sup. kop)</td></tr>
+          <tr><td>Laterotrusion</td><td>Ipsilateraal rotatie, contralateraal translatie</td><td>M. pterygoideus lat. (contralateraal)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">CMD</span><h3>Craniomandibulaire Dysfunctie (CMD)</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p>CMD is een overkoepelende term voor aandoeningen van de kauwspieren en TMJ.</p>
+        <ul>
+          <li><strong>DC/TMD classificatie (Diagnostic Criteria for TMD):</strong> Gestandaardiseerd diagnostisch protocol</li>
+          <li><strong>As I – Somatische diagnoses:</strong> Myalgie, artralgie, discusverplaatsing (met/zonder repositie), degeneratieve gewrichtsaandoening</li>
+          <li><strong>As II – Psychosociale factoren:</strong> Pijn gerelateerd aan functionele beperkingen, psychologische status</li>
+        </ul>
+        <table>
+          <tr><th>Diagnose</th><th>Symptomen</th><th>Behandeling</th></tr>
+          <tr><td>Discusverplaatsing met repositie</td><td>Klik bij opening en sluiting (reciproke klik)</td><td>Stabilisatiespalk, fysiotherapie</td></tr>
+          <tr><td>Discusverplaatsing zonder repositie</td><td>Beperkte mondopening, pijn, geen klik</td><td>Spalk, mobilisatie</td></tr>
+          <tr><td>Myalgie</td><td>Kauwspierpijn, palpatiepijn</td><td>Ontspanning, fysiotherapie, farmacologisch</td></tr>
+          <tr><td>Artralgie</td><td>Gewrichtspijn bij beweging</td><td>NSAID, rust, spalk</td></tr>
+        </table>
+        <div class="success-box">✅ Stabilisatiespalk = eerste keus bij CMD. Dekt alle tanden, mist occlusale interferenties, geeft musculaire ontspanning.</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">Bruxisme</span><h3>Bruxisme – Slaap en Wakker</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Slaapbruxisme:</strong> Tijdens NREM-slaap, ritmische masticatoire spieractiviteit. Prevalentie: 8-15% populatie.</li>
+          <li><strong>Waakbruxisme:</strong> Overdag, vaak onbewust, stress-gerelateerd. Meer tanden-op-tanden contact dan slaap (minder slijpen).</li>
+          <li><strong>Gevolgen:</strong> Attritie (glazuurverlies), hypertrofie masseter, hoofdpijn, TMJ-pijn, breuk restauraties/protheses</li>
+          <li><strong>Diagnose:</strong> Anamnese, klinisch onderzoek (facettensleet), polysomnografie (goudstandaard slaapbruxisme)</li>
+          <li><strong>Behandeling:</strong> Occlusale spalk (bescherming, niet stoppen), biofeedback, cognitieve gedragstherapie, botulinetoxine (masseter)</li>
+        </ul>
+        <div class="warn-box">⚠️ Spalk STOPT bruxisme NIET, maar beschermt tanden en gewrichten tegen de gevolgen!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-teal">OSAS</span><h3>OSAS – Obstructief Slaapapneu Syndroom</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Definitie:</strong> AHI ≥5 apneus/hypopneus per uur slaap + symptomen (snurken, excessive daytime sleepiness). Ernst: licht 5-15, matig 15-30, ernstig &gt;30/uur.</li>
+          <li><strong>Diagnose:</strong> Polysomnografie (PSG) = goudstandaard. Thuis: actegrafie (screening).</li>
+          <li><strong>CPAP:</strong> Goudstandaard behandeling. Continu positieve luchtwegdruk.</li>
+          <li><strong>MRA (Mandibulaire Repositie Apparaat):</strong> Tandheelkundige behandeling bij mild-matig OSAS of CPAP-intolerantie. Protrudeert mandibula 50-70% van maximale protrusie. Bijwerkingen: speekselvloed, temporaire kaakpijn, occlusiewijzigingen (na langdurig gebruik).</li>
+          <li><strong>Indicatie MRA:</strong> Licht-matig OSAS (AHI 5-30), eenvoudig snurken, CPAP-onverdraagzaamheid</li>
+        </ul>
+        <div class="info-box">
+          <div class="info-box-title">MRA – Tandarts verantwoordelijkheid</div>
+          <ul>
+            <li>Eerst verwijzing naar slaapspecialist voor diagnose (PSG)</li>
+            <li>Tandartsrol: vervaardiging en follow-up MRA</li>
+            <li>Jaarlijkse controle occlusie en TMJ</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="kinesio-samenvatting">
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Kernpunt</th></tr>
+      <tr><td>TMJ kraakbeen</td><td>Fibreus kraakbeen (NIET hyalien!)</td></tr>
+      <tr><td>Discus articularis</td><td>Verdeelt in rotatie (onder) + translatie (boven) compartiment</td></tr>
+      <tr><td>Reciproke klik</td><td>Discusverplaatsing MET repositie</td></tr>
+      <tr><td>Stabilisatiespalk</td><td>Eerste keus CMD, beschermt, stopt bruxisme NIET</td></tr>
+      <tr><td>OSAS diagnose</td><td>AHI ≥5 + symptomen, PSG goudstandaard</td></tr>
+      <tr><td>OSAS behandeling</td><td>CPAP = goudstandaard. MRA bij mild-matig of CPAP intolerantie</td></tr>
+      <tr><td>MRA protrusie</td><td>50-70% maximale protrusie</td></tr>
+      <tr><td>Bruxisme spalk</td><td>Beschermt, stopt bruxisme NIET</td></tr>
+    </table>
+  </div>
+  <div class="tab-content" id="kinesio-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Kinesiologie / TMD çıkmış soru setleri</div>
+      <ul><li>THK2 Drive dosyalarından ayrıştırılan setler</li></ul>
+    </div>
+    <div id="set-selector-kinesio-cikmis"></div>
+    <div id="quiz-container-kinesio_cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-kinesio-cikmis', 'kinesio_cikmis', 'quiz-container-kinesio_cikmis');
+      });
+    </script>
+  </div>
+  <div class="tab-content" id="kinesio-oefen">
+    <div class="quiz-controls">
+      <button class="btn btn-primary" onclick="startQuiz('kinesio_oefen', 'quiz-container-kinesio_oefen')">▶ Start oefentoets (AI)</button>
+      <button class="btn btn-secondary" onclick="resetQuiz('kinesio_oefen', 'quiz-container-kinesio_oefen')">↺ Opnieuw</button>
+      
+    </div>
+    
+    <div id="quiz-container-kinesio_oefen"></div>
+  </div>
+</div>
+
+<!-- ██████ ORALE FUNCTIELEER + MZK ██████ -->
+<div class="page" id="page-functie">
+  <div class="section-hdr">
+    <div class="section-icon si-blue">🦷</div>
+    <div><h2>Orale Functieleer &amp; Mondziekten-Kaakchirurgie</h2><p>THK II · 35 + 25 = 60 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('functie','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('functie','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('functie','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('functie','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+  <div class="tab-content active" id="functie-notities">
+    <div id="drive-notes-functie"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Kernthema's Orale Functieleer &amp; MZK</div>
+    <ul>
+      <li><strong>Orale Functieleer (35 mc):</strong> Occlusie, prothetiek, implantologie, frame prothetiek</li>
+      <li><strong>MZK (25 mc):</strong> Extractietechniek, abscessen, schisis, implantaten, MKA-chirurgie</li>
+      <li>Implantologie – indicaties, contraïndicaties, osseoïntegratie</li>
+      <li>Extractie – forcepstechnieken, complicaties (alveolitis, droge alveole)</li>
+      <li>Abscessen – lokalisatie, drainage, AB beleid</li>
+      <li>Schisis – classificatie, behandeling, timing</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">Occlusie</span><h3>Occlusie – Concepten en Klassen</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Angle Klasse</th><th>Relatie 1e molaar</th><th>Klinisch beeld</th></tr>
+          <tr><td>Klasse I</td><td>Mesio-buccale cusp boven in sulcus 1e onderkaaksmolaar</td><td>Normaalbeet</td></tr>
+          <tr><td>Klasse II div 1</td><td>Bovenkaaksmolaar mesiovoeren</td><td>Retrognath onderkaak, proclinerende boventanden (vergroot overjet)</td></tr>
+          <tr><td>Klasse II div 2</td><td>Bovenkaaksmolaar mesiovoeren</td><td>Retrognath onderkaak, inclinerende boventanden (vergroot overbite)</td></tr>
+          <tr><td>Klasse III</td><td>Bovenkaaksmolaar distovoeren</td><td>Prognath onderkaak, kruis/omgekeerde beet voortanden</td></tr>
+        </table>
+        <p style="margin-top:10px"><strong>Occlusieconcepten:</strong></p>
+        <ul>
+          <li><strong>Centrale relatie (CR):</strong> Condylus in meest anterieur-superieure positie in fossa. Reproduceerbaar, therapeutisch startpunt.</li>
+          <li><strong>Maximale intercuspidatie (MIP):</strong> Maximaal tandencontact. Kan afwijken van CR (glide).</li>
+          <li><strong>Laterale geleiding:</strong> Cuspidaatgeleiding (canine guidance) OF groepsfunctie</li>
+          <li><strong>Protrusiefgeleiding:</strong> Voortanden (incisief geleiding)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-green">Implantologie</span><h3>Implantologie – Osseoïntegratie en Protocol</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Osseoïntegratie:</strong> Direct functioneel en structureel contact tussen levend bot en implantaatoppervlak (Brånemark definitie)</li>
+          <li><strong>Genezing:</strong> 3-4 maanden onderkaak, 4-6 maanden bovenkaak (conventioneel protocol)</li>
+          <li><strong>Indicaties:</strong> Geïsoleerd tandverlies, partiële/totale edentaatloze patiënt</li>
+          <li><strong>Absolute contraïndicaties:</strong> Recent doorgemaakt myocardinfarct (&lt;6 maanden), ernstige osteoporose met bisfosfonaten IV (MRONJ-risico), actieve maligniteit in bestraald gebied</li>
+          <li><strong>Relatieve contraïndicaties:</strong> Roken (succes ↓), diabetes (slecht gereguleerd, HbA1c &gt;8%), osteoporose (oraal bisfosfonaat)</li>
+          <li><strong>MRONJ:</strong> Medicatie-gerelateerde Osteonecrose Kaak. Risico bij IV bisfosfonaten (oncologie). Tandextractie en implantaten vermijden of medicatie-vrij interval.</li>
+        </ul>
+        <div class="warn-box">⚠️ Orale bisfosfonaten (osteoporose) = relatieve contraindicatie. IV bisfosfonaten (oncologie) = absolute contraindicatie voor invasieve MKA-ingrepen!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-red">Abscessen</span><h3>Tandheelkundige Abscessen – Lokalisatie en Behandeling</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Type</th><th>Lokalisatie</th><th>Drainageweg</th><th>Behandeling</th></tr>
+          <tr><td>Periapicaal abces</td><td>Periapicaal</td><td>Kanaal of fistel</td><td>WKB/extractie + incisie drainage</td></tr>
+          <tr><td>Parodontaal abces</td><td>Parodontale pocket</td><td>Via sulcus</td><td>Drainage via pocket, debridement</td></tr>
+          <tr><td>Pericoroniaire abces</td><td>Rond deels doorgebroken verstandskies</td><td>Operculumgebied</td><td>Spoelen, AB, verwijdering verstandskies</td></tr>
+          <tr><td>Sublinguaal abces</td><td>Vloer mondholte</td><td>Incisie intraoraal</td><td>Hospitalisatie! Luchtwegrisico</td></tr>
+          <tr><td>Submandibulaire abces</td><td>Onder mandibula</td><td>Extraorale incisie</td><td>OK, hospitalisatie</td></tr>
+        </table>
+        <div class="danger-box">🚫 Ludwig's angina = bilateraal submandibulaire + submentale + sublinguaal cel. DETI 1 – direct ziekenhuis, luchtwegbewaking!</div>
+        <p style="margin-top:10px"><strong>AB beleid abscessen:</strong></p>
+        <ul>
+          <li>Zonder systemische tekenen: Drainage zonder AB</li>
+          <li>Met koorts/malaise/cellulitis: Amoxicilline 500mg 3x/dag of Metronidazol 500mg 3x/dag (bij penallergie)</li>
+          <li>Ernstige infectie: Amoxicilline/clavulaanzuur of hospitalisatie IV AB</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-purple">Schisis</span><h3>Schisis – Classificatie en Behandeling</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Type</th><th>Betrokken structuren</th></tr>
+          <tr><td>Schisis lip (CL)</td><td>Lip alleen</td></tr>
+          <tr><td>Schisis lip + alveolus (CLA)</td><td>Lip + tandvleesrug</td></tr>
+          <tr><td>Schisis lip + alveolus + palatum (CLAP)</td><td>Volledige schisis</td></tr>
+          <tr><td>Schisis palatum (CP)</td><td>Alleen verhemelte (lip intact)</td></tr>
+          <tr><td>Geïsoleerde gehemelteschisis</td><td>Submuqueuze/uvula bifida</td></tr>
+        </table>
+        <p style="margin-top:10px"><strong>Behandelingstijdlijn:</strong></p>
+        <ul>
+          <li><strong>Geboorte-3 mnd:</strong> Pre-chirurgische orthopedische behandeling (nazobifida strips, NAM)</li>
+          <li><strong>3-6 mnd:</strong> Lipsluiting (cheiloplastiek)</li>
+          <li><strong>9-18 mnd:</strong> Palatumsluiting (palatoplastiek)</li>
+          <li><strong>7-10 jaar:</strong> Alveolaire botplastiek (voor doorbraak hoektand)</li>
+          <li><strong>Later:</strong> Neus/lipseptiekloos, orthognatische chirurgie, implantaten</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">Extractie</span><h3>Extractietechniek en Complicaties</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p><strong>Extractiebewegingen:</strong></p>
+        <ul>
+          <li>Eénwortelige elementen: Rotatie + tractie</li>
+          <li>Meerwortelige elementen: Luxatie + wigbewegingen (GEEN rotatie)</li>
+          <li>Forcepstechniek: Dilatatie alveolaire wand + PDL-ruptuur</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Complicaties:</strong></p>
+        <table>
+          <tr><th>Complicatie</th><th>Timing</th><th>Behandeling</th></tr>
+          <tr><td>Bloeding</td><td>Direct/postoperatief</td><td>Compressie, hechtingen, lokaal hemostase</td></tr>
+          <tr><td>Alveolitis sicca (droge alveole)</td><td>2-5 dagen postoperatief</td><td>Ioodoform-gaas (Alvogyl), analgesie, NIET spoelen!</td></tr>
+          <tr><td>Fractura radicis</td><td>Tijdens extractie</td><td>Retrievaltechniek, root canal treatment, of laten</td></tr>
+          <tr><td>Mandibulaire paraesthesie</td><td>Postoperatief</td><td>Meestal spontaan herstel 3-6 maanden</td></tr>
+          <tr><td>Verslikking/aspiratie tand</td><td>Tijdens extractie</td><td>Röntgen thorax, bronchoscopie</td></tr>
+        </table>
+        <div class="warn-box">⚠️ Alveolitis sicca: GEEN warme vloeistoffen, GEEN spoelen (stoot bloedstolsel weg). Alvogyl gaas = eerste keus behandeling.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="functie-samenvatting">
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Kernpunt</th></tr>
+      <tr><td>Angle Klasse I</td><td>Normaaloclusie, mesiobuccale cusp in sulcus 1e molaar OK</td></tr>
+      <tr><td>Angle Klasse III</td><td>Prognathie onderkaak, crossbite voortanden</td></tr>
+      <tr><td>Osseoïntegratie</td><td>3-4 mnd OK, 4-6 mnd BK</td></tr>
+      <tr><td>Bisfosfonaten IV</td><td>MRONJ-risico → absolute contraindicatie implantaten</td></tr>
+      <tr><td>Ludwig's angina</td><td>Bilateraal celluitis, DETI 1, luchtwegrisico</td></tr>
+      <tr><td>Schisis lip sluiting</td><td>3-6 maanden</td></tr>
+      <tr><td>Schisis palatum sluiting</td><td>9-18 maanden</td></tr>
+      <tr><td>Alveolaire botplastiek</td><td>7-10 jaar (voor hoektanddoorbraak)</td></tr>
+      <tr><td>Alveolitis sicca</td><td>2-5 dagen na extractie, Alvogyl gaas</td></tr>
+      <tr><td>Droge alveole</td><td>GEEN warme dranken, GEEN spoelen</td></tr>
+    </table>
+  </div>
+  <div class="tab-content" id="functie-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Orale Functieleer / MZK çıkmış soru setleri</div>
+      <ul><li>THK2 Drive dosyalarından aktarılan fonksiyon, MZK ve behandelplan odaklı sorular</li></ul>
+    </div>
+    <div id="set-selector-functie-cikmis"></div>
+    <div id="quiz-container-functie_cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-functie-cikmis', 'functie_cikmis', 'quiz-container-functie_cikmis');
+      });
+    </script>
+  </div>
+  <div class="tab-content" id="functie-oefen">
+    <div class="quiz-controls">
+      <button class="btn btn-primary" onclick="startQuiz('functie_oefen', 'quiz-container-functie_oefen')">▶ Start oefentoets (AI)</button>
+      <button class="btn btn-secondary" onclick="resetQuiz('functie_oefen', 'quiz-container-functie_oefen')">↺ Opnieuw</button>
+      
+    </div>
+    
+    <div id="quiz-container-functie_oefen"></div>
+  </div>
+</div>
+
+<!-- ██████ ORALE PATHOLOGIE ██████ -->
+<div class="page" id="page-pato">
+  <div class="section-hdr">
+    <div class="section-icon si-red">🔬</div>
+    <div><h2>Orale Pathologie</h2><p>THK II · 15 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('pato','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('pato','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('pato','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('pato','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+  <div class="tab-content active" id="pato-notities">
+    <div id="drive-notes-pato"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Kernthema's Orale Pathologie</div>
+    <ul>
+      <li>Premaligne laesies – leukoplakieën, erythroplakieën, OLP</li>
+      <li>Orale tumoren – SCC (Spinocellulair carcinoom), risicofactoren</li>
+      <li>Cystes kaak – odontogene en niet-odontogene cystes</li>
+      <li>Mucocele en ranula</li>
+      <li>Afteuse ulcera – minor, major, herpetiform</li>
+      <li>Orale manifestaties van systemische ziekten</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-red">Premaligne</span><h3>Premaligne Laesies Mondholte</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Laesie</th><th>Beschrijving</th><th>Maligne risico</th><th>Actie</th></tr>
+          <tr><td>Leukoplakieën</td><td>Witte plak, niet wegveegbaar</td><td>1-17% (homogeen laag, niet-homogeen hoog)</td><td>Biopt, elimineer risicofactoren</td></tr>
+          <tr><td>Erythroplakieën</td><td>Rode fluweelachtige plak</td><td><strong>40-50%!</strong> (hoogste maligne risico)</td><td>Biopt URGENT</td></tr>
+          <tr><td>Orale lichen planus (OLP)</td><td>Wickham-striae, wit netvormig patroon</td><td>0,5-2% (erosieve vorm hoger)</td><td>Monitoring, biopt bij verandering</td></tr>
+          <tr><td>Submuceuze fibrose</td><td>Betelnoot-gerelateerd, fibrotisch verhemelte</td><td>7-13%</td><td>Stoppen betelnoot, biopt</td></tr>
+        </table>
+        <div class="danger-box">🚫 Erythroplakieën hebben het HOOGSTE maligne potentieel (40-50%)! Altijd biopt!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">Cystes</span><h3>Kaakcystes – Classificatie</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Cyste</th><th>Oorsprong</th><th>Röntgen</th></tr>
+          <tr><td>Radiculaire cyste</td><td>Pulpanecrose → periapicaal granuloom → cyste</td><td>Periapicaal radiolucent, cortex begrenzing</td></tr>
+          <tr><td>Dentigerale cyste</td><td>Rond kroon van niet-doorgebroken tand (folliculaire cyste)</td><td>Radiolucent rond kroon</td></tr>
+          <tr><td>Keratocyste (OKC)</td><td>Odontogene keratocyste – hoge recidiefkans</td><td>Multiloculair, langs mandibula</td></tr>
+          <tr><td>Nasopalatinale cyste</td><td>Ductus nasopalatinus restanten, anterieur maxilla</td><td>Hartvormige lucency anterieur maxilla</td></tr>
+        </table>
+        <div class="warn-box">⚠️ OKC (Keratocyste) heeft de HOOGSTE recidiefkans! Extra follow-up noodzakelijk. Kan onderdeel zijn van nevoid basaalcelcarcinoom syndroom (Gorlin).</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-purple">Afteuse ulcera</span><h3>Recidiverende Afteuse Ulcera (RAU)</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Type</th><th>Grootte</th><th>Aantal</th><th>Genezing</th></tr>
+          <tr><td>Minor (Mikulicz)</td><td>&lt;10mm</td><td>1-5</td><td>7-14 dagen, geen litteken</td></tr>
+          <tr><td>Major (Sutton)</td><td>&gt;10mm</td><td>1-3</td><td>&gt;6 weken, LITTEKEN!</td></tr>
+          <tr><td>Herpetiform</td><td>1-2mm</td><td>10-100 kleine ulcera</td><td>7-14 dagen, kunnen conflueren</td></tr>
+        </table>
+        <p style="margin-top:10px"><strong>Behandeling:</strong> Triamcinolon-acetonidzuur mondpasta, chloorhexidine spoeling, analgesie. Bij ernstige/frequente recidieven: systemische corticosteroïden, colchicine, thalidomide (ernstig).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="pato-samenvatting">
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Kernpunt</th></tr>
+      <tr><td>Erythroplakieën</td><td>Hoogste maligne risico (40-50%), urgent biopt!</td></tr>
+      <tr><td>Leukoplakieën homogeen</td><td>Laag maligne risico (1%)</td></tr>
+      <tr><td>OLP (lichen planus)</td><td>Wickham-striae, monitoring</td></tr>
+      <tr><td>Radiculaire cyste</td><td>Pulpanecrose oorzaak, WKB cureert</td></tr>
+      <tr><td>Dentigerale cyste</td><td>Rond niet-doorgebroken tand</td></tr>
+      <tr><td>OKC</td><td>Hoogste recidiefkans, Gorlin-syndroom</td></tr>
+      <tr><td>Afteus ulcus major</td><td>&gt;10mm, &gt;6 weken, litteken</td></tr>
+      <tr><td>Ludwig's angina</td><td>Bilateraal submandibulaire cellulitis, levensgevaarlijk</td></tr>
+    </table>
+  </div>
+  <div class="tab-content" id="pato-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Orale Pathologie çıkmış soru setleri</div>
+      <ul><li>THK2 Drive dosyalarından ayrıştırılan pathologie setleri</li></ul>
+    </div>
+    <div id="set-selector-pato-cikmis"></div>
+    <div id="quiz-container-pato_cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-pato-cikmis', 'pato_cikmis', 'quiz-container-pato_cikmis');
+      });
+    </script>
+  </div>
+  <div class="tab-content" id="pato-oefen">
+    <div class="quiz-controls">
+      <button class="btn btn-primary" onclick="startQuiz('pato_oefen', 'quiz-container-pato_oefen')">▶ Start oefentoets (AI)</button>
+      <button class="btn btn-secondary" onclick="resetQuiz('pato_oefen', 'quiz-container-pato_oefen')">↺ Opnieuw</button>
+      
+    </div>
+    
+    <div id="quiz-container-pato_oefen"></div>
+  </div>
+</div>
+
+<!-- ██████ ORTHODONTIE ██████ -->
+<div class="page" id="page-ortho">
+  <div class="section-hdr">
+    <div class="section-icon si-teal">📐</div>
+    <div><h2>Orthodontie</h2><p>THK II · 15 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('ortho','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('ortho','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('ortho','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('ortho','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+  <div class="tab-content active" id="ortho-notities">
+    <div id="drive-notes-ortho"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Kernthema's Orthodontie</div>
+    <ul>
+      <li>Angle-classificatie en skelettale klassen</li>
+      <li>Tandstandafwijkingen – overbite, overjet, crossbite, open beet</li>
+      <li>Ruimteproblemen – ruimtetekort berekening</li>
+      <li>Interceptieve orthodontie – timing behandeling</li>
+      <li>Orthodontische krachten – botremodellering</li>
+      <li>Retentie na behandeling</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-teal">Afwijkingen</span><h3>Tandstandafwijkingen – Definities</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Term</th><th>Definitie</th><th>Normaalwaarde</th></tr>
+          <tr><td>Overjet (horizontale overbite)</td><td>Horizontale afstand boven- en onderincisieven</td><td>2-4 mm</td></tr>
+          <tr><td>Overbite (verticale overbite)</td><td>Verticale overlap boven- op ondersnijtanden</td><td>1-3 mm (1/3 overlapping)</td></tr>
+          <tr><td>Open beet</td><td>Geen verticale overlap, gap anterioraal</td><td>Abnormaal (0 mm)</td></tr>
+          <tr><td>Crossbite (kruisbeet)</td><td>Boventanden staan binnenkant ondertanden</td><td>Abnormaal</td></tr>
+          <tr><td>Scissorsbeet (schaarsbeet)</td><td>Boventanden volledig buiten ondertanden</td><td>Abnormaal</td></tr>
+          <tr><td>Diastema</td><td>Ruimte tussen tanden (meest centraal)</td><td>&gt;0,5 mm = klinisch significant</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">Krachten</span><h3>Orthodontische Krachten en Botremodellering</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Drukzijde:</strong> Botafbraak (osteoklastenactiviteit) → tand beweegt naar drukzijde</li>
+          <li><strong>Trekzijde:</strong> Botaanmaak (osteoblastenactiviteit) → PDL-rek stimuleert botvorming</li>
+          <li><strong>Optimale kracht:</strong> Lichte krachten (25-75 g voor incisieven) → optimale remodellering. Zware krachten → pijn, hialinisatie PDL, vertraging</li>
+          <li><strong>Wortelresorptie:</strong> Risico bij orthodontie, met name langdurige krachten en apexnabije krachten. Monitoring met röntgen.</li>
+          <li><strong>Retentie:</strong> Na actieve behandeling essentieel! Tanden neigen terug te bewegen. Vaste retainer (lingaalbaar) of removable retainer.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="ortho-samenvatting">
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Kernpunt</th></tr>
+      <tr><td>Overjet normaal</td><td>2-4 mm</td></tr>
+      <tr><td>Overbite normaal</td><td>1-3 mm (1/3 overlap)</td></tr>
+      <tr><td>Crossbite</td><td>Boven tanden staan aan binnenzijde ondertanden</td></tr>
+      <tr><td>Drukzijde orthodontie</td><td>Botafbraak → tand beweegt daarheen</td></tr>
+      <tr><td>Trekzijde orthodontie</td><td>Botaanmaak (osteoblasten)</td></tr>
+      <tr><td>Optimale kracht incisief</td><td>25-75 gram</td></tr>
+      <tr><td>Retentie</td><td>Altijd nodig na behandeling</td></tr>
+    </table>
+  </div>
+  <div class="tab-content" id="ortho-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Orthodontie çıkmış soru setleri</div>
+      <ul><li>THK2 Drive dosyalarından ayrıştırılan orthodontie setleri</li></ul>
+    </div>
+    <div id="set-selector-ortho-cikmis"></div>
+    <div id="quiz-container-ortho_cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-ortho-cikmis', 'ortho_cikmis', 'quiz-container-ortho_cikmis');
+      });
+    </script>
+  </div>
+  <div class="tab-content" id="ortho-oefen">
+    <div class="quiz-controls">
+      <button class="btn btn-primary" onclick="startQuiz('ortho_oefen', 'quiz-container-ortho_oefen')">▶ Start oefentoets (AI)</button>
+      <button class="btn btn-secondary" onclick="resetQuiz('ortho_oefen', 'quiz-container-ortho_oefen')">↺ Opnieuw</button>
+      
+    </div>
+    
+    <div id="quiz-container-ortho_oefen"></div>
+  </div>
+</div>
+
+<!-- ██████ BASIS MEDISCH ██████ -->
+<div class="page" id="page-basis">
+  <div class="section-hdr">
+    <div class="section-icon si-green">⚕️</div>
+    <div><h2>Basisch-Medisch</h2><p>100 MC-vragen · Max 20 fout · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('basis','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('basis','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('basis','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('basis','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+  <div class="tab-content active" id="basis-notities">
+    <div id="drive-notes-basis"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Verdeling 100 MC-vragen Basisch-Medisch</div>
+    <ul>
+      <li>Ziektenleer (30 mc) – cardiovasculair, respiratoir, endocrien, immunologie</li>
+      <li>Farmacologie (20 mc) – analgetica, antibiotica, anesthesie, wisselwerkingen</li>
+      <li>Anesthesie (5 mc) – lokaalanesthesie technieken en farmacologie</li>
+      <li>Fysiologie (20 mc) – cardiovasculair, zenuwstelsel, pijn</li>
+      <li>Microbiologie (10 mc) – bacteriën, virussen, sterilisatie, infectiepreventie</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-green">Farmacologie</span><h3>Analgetica en Pijnmanagement</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Geneesmiddel</th><th>Klasse</th><th>Werkingsmechanisme</th><th>Max dosis/dag</th></tr>
+          <tr><td>Paracetamol</td><td>Niet-opioid</td><td>Centraal (COX-3?), perifeer antipyretisch</td><td>4g (1g per 6u)</td></tr>
+          <tr><td>Ibuprofen</td><td>NSAID</td><td>COX-1 + COX-2 remming</td><td>1200-2400mg</td></tr>
+          <tr><td>Naproxen</td><td>NSAID</td><td>COX-1 + COX-2 remming, langer werkend</td><td>1000mg</td></tr>
+          <tr><td>Diclofenac</td><td>NSAID</td><td>COX-2 selectiever</td><td>150mg</td></tr>
+          <tr><td>Codeine</td><td>Opioid (zwak)</td><td>Mu-opioid receptor</td><td>240mg</td></tr>
+          <tr><td>Tramadol</td><td>Opioid (zwak) + SNRI</td><td>Mu-opioid + noradrenaline/serotonine</td><td>400mg</td></tr>
+        </table>
+        <div class="warn-box">⚠️ NSAID's gecontraïndiceerd bij: maagulcus, nierfunctiestoornissen, zwangerschap 3e trimester, astma (aspirin-intolerantie), bloedstollingsstoornissen, anticoagulantia!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">Anesthesie</span><h3>Lokaalanesthesie in de Tandheelkunde</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Stof</th><th>Amide/Ester</th><th>Werking</th><th>Max dosis (zonder vasoconstrictor)</th></tr>
+          <tr><td>Lidocaïne 2%</td><td>Amide</td><td>Snel, 1-2 uur</td><td>300mg (4,3 mg/kg)</td></tr>
+          <tr><td>Articaïne 4%</td><td>Amide</td><td>Snel, uitstekende weefselverspreiding</td><td>500mg (7mg/kg)</td></tr>
+          <tr><td>Mepivacaïne 3%</td><td>Amide</td><td>Zonder vasoconstrictor beschikbaar</td><td>400mg</td></tr>
+          <tr><td>Prilocaïne</td><td>Amide</td><td>Methemoglobinemie bij hoge dosis!</td><td>400mg</td></tr>
+          <tr><td>Bupivacaïne 0,5%</td><td>Amide</td><td>Lang werkend (4-8 uur), postoperatieve pijn</td><td>150mg</td></tr>
+        </table>
+        <p style="margin-top:10px"><strong>Vasoconstrictors:</strong></p>
+        <ul>
+          <li>Adrenaline (epinefrine): 1:100.000 of 1:200.000. Verlengd anesthesie, vermindert bloeding.</li>
+          <li>Felypressine: Alternatief bij hartpatiënten (minder cardiale bijwerkingen)</li>
+          <li>Max adrenaline: 0,2 mg per sessie (hartpatiënt max 0,04 mg)</li>
+        </ul>
+        <div class="danger-box">🚫 Articaïne NIET gebruiken voor blokkade N. lingualis of N. alveolaris inferior → verhoogd risico paresthesie (t.o.v. lidocaïne)!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">Antibiotica</span><h3>Antibiotica in de Tandheelkunde</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Antibioticum</th><th>Werkingsspectrum</th><th>Indicatie tandheelkunde</th></tr>
+          <tr><td>Amoxicilline</td><td>Breed spectrum, gram+/gram-</td><td>Orofaciale infecties, profylaxe endocarditis</td></tr>
+          <tr><td>Amoxicilline/Clavulaanzuur</td><td>Breed + bètalactamase-resistente bacteriën</td><td>Ernstige odontogene infecties</td></tr>
+          <tr><td>Metronidazol</td><td>Anaeroben</td><td>ANUG, paro AB, gecombineerd met amoxicilline</td></tr>
+          <tr><td>Clindamycine</td><td>Gram+ (inclusief anaeroben)</td><td>Penallergie alternatief, orofaciale infecties</td></tr>
+          <tr><td>Doxycycline</td><td>Tetracycline, breed spectrum</td><td>Paro (lokaal), avulsie, Lyme</td></tr>
+        </table>
+        <div class="warn-box">⚠️ Clindamycine → verhoogd risico Clostridioides difficile colitis. Niet standaard eerste keus!</div>
+        <p style="margin-top:10px"><strong>Endocarditis profylaxe:</strong> Amoxicilline 2g oraal 30-60 min voor ingreep (of Clindamycine 600mg bij penallergie). Indicatie: Hoog-risico hartafwijking (kunstklep, eerder doorgemaakte endocarditis, congenitale hartafwijking).</p>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-purple">Ziektenleer</span><h3>Cardiovasculaire Aandoeningen voor Tandartsen</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Aandoening</th><th>Relevantie tandheelkunde</th><th>Actie</th></tr>
+          <tr><td>Hypertensie</td><td>Adrenaline voorzichtig (&lt;0,04mg bij gecontroleerd); geen elektieve zorg bij RR&gt;180/110</td><td>Meten voor behandeling</td></tr>
+          <tr><td>Angina pectoris</td><td>Stress vermijden, korte afspraken, nitroglycerine aanwezig</td><td>Horizontale stoel riskant</td></tr>
+          <tr><td>Recent MI (&lt;6m)</td><td>Geen elektieve tandheelkunde!</td><td>Uitstellen tot 6 maanden</td></tr>
+          <tr><td>Antistolling (Warfarine)</td><td>INR meten voor invasieve ingrepen. INR ≤3,5 = tanden trekken OK met lokale hemostase</td><td>INR check</td></tr>
+          <tr><td>DOAC (apixaban, rivaroxaban)</td><td>Laatste dosis overslaan voor invasief ingreep, overleg cardioloog</td><td>Protocol volgen</td></tr>
+          <tr><td>Diabetes</td><td>Hogere infectierisico, verminderde genezing, periodontitis relatie</td><td>HbA1c kennen</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-red">Microbiologie</span><h3>Infectiepreventie en Sterilisatie</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Methode</th><th>Toepassing</th><th>Effectief tegen</th></tr>
+          <tr><td>Autoclaaf (121°C/20min of 134°C/4min)</td><td>Instrumenten met warmteresistentie</td><td>Alle micro-organismen incl. sporen</td></tr>
+          <tr><td>Droge hitte (160°C/2u)</td><td>Poeder, oliën (geen stoom)</td><td>Sporen, bakteriën, virussen</td></tr>
+          <tr><td>Glutaaraldehyde 2%</td><td>Hittegevoelige instrumenten</td><td>Bacteriën, virussen, schimmels (langdurig ook sporen)</td></tr>
+          <tr><td>Chloorhexidine</td><td>Huid, mondspoeling</td><td>Gram+ bacteriën, schimmels (GEEN sporen)</td></tr>
+          <tr><td>Ethylenoxide (ETO)</td><td>Kunststof, elektronica</td><td>Alle micro-organismen incl. sporen</td></tr>
+        </table>
+        <div class="info-box">
+          <div class="info-box-title">Prion-inactivatie</div>
+          <ul>
+            <li>Prionen zijn NIET gevoelig voor normale sterilisatie</li>
+            <li>NaOH 1M + autoclaaf 134°C = meest effectieve methode</li>
+            <li>Instrument van mogelijke CJD-patiënt → vernietigen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="basis-samenvatting">
+    <h3 style="font-size:15px;font-weight:700;margin-bottom:14px">⚡ Snelle herhaling – Basisch-Medisch</h3>
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Kernpunt</th><th>Let op</th></tr>
+      <tr><td>Paracetamol max dosis</td><td>4g/dag (1g per 6 uur)</td><td><span class="badge-ans">Geen effect bij lever</span></td></tr>
+      <tr><td>NSAID contraïndicaties</td><td>Maagulcus, nier, zwangerschap T3, astma</td><td><span class="badge-oj">Bloedingsrisico</span></td></tr>
+      <tr><td>Lidocaïne max</td><td>300mg zonder adrenaline</td><td><span class="badge-ans">Amide</span></td></tr>
+      <tr><td>Articaïne N. alv. inf.</td><td>Verhoogd paresthesie risico!</td><td><span class="badge-oj">Voorzichtig!</span></td></tr>
+      <tr><td>Adrenaline max cardiac</td><td>0,04 mg per sessie</td><td><span class="badge-oj">Hartpatiënt</span></td></tr>
+      <tr><td>Endocarditis profylaxe</td><td>Amoxicilline 2g 30-60 min voor ingreep</td><td><span class="badge-ans">Hoog-risico hart</span></td></tr>
+      <tr><td>INR grens extractie</td><td>≤3,5 (geen stop anticoagulantia)</td><td><span class="badge-ans">Lokale hemostase</span></td></tr>
+      <tr><td>Autoclaaf temperatuur</td><td>121°C/20min of 134°C/4min</td><td><span class="badge-ans">Goudstandaard</span></td></tr>
+      <tr><td>Prion inactivatie</td><td>NaOH 1M + autoclaaf</td><td><span class="badge-oj">Uniek!</span></td></tr>
+      <tr><td>Recent MI</td><td>Geen elektief voor 6 maanden</td><td><span class="badge-oj">Uitstellen!</span></td></tr>
+    </table>
+  </div>
+
+  <div class="tab-content" id="basis-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Basisch-Medisch cikmis soru bankası</div>
+      <ul><li>Alle beschikbare Basisch-Medisch çıkmış sets · antwoorden worden willekeurig geschud</li></ul>
+    </div>
+    <div id="set-selector-basis-cikmis"></div>
+    <div id="quiz-container-basis-cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-basis-cikmis', 'basis_cikmis', 'quiz-container-basis-cikmis');
+      });
+    </script>
+  </div>
+
+    <div class="tab-content" id="basis-oefen">
+    <div class="info-box">
+      <div class="info-box-title">🤖 Basisch-Medisch AI Oefensets – 10 sets van 10 vragen</div>
+      <ul><li>AI-gegenereerde vragen op examen-niveau · antwoorden worden willekeurig geschud</li></ul>
+    </div>
+    <div id="set-selector-basis"></div>
+    <div id="quiz-container-basis-ai"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-basis', 'basis_ai', 'quiz-container-basis-ai');
+      });
+    </script>
+  </div>
+</div>
+
+<!-- ██████ RADIOLOGIE ██████ -->
+<div class="page" id="page-radio">
+  <div class="section-hdr">
+    <div class="section-icon si-blue">📡</div>
+    <div><h2>Radiologie</h2><p>Radiologie &amp; Wetenschap · 20 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('radio','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('radio','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('radio','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('radio','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+  <div class="tab-content active" id="radio-notities">
+    <div id="drive-notes-radio"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Kernthema's Radiologie</div>
+    <ul>
+      <li>Röntgenproductie – eigenschappen van röntgenstraling</li>
+      <li>Beeldvorming – periapicale, bitewing, panorama, CBCT</li>
+      <li>Stralingsbescherming – ALARA-principe, beschermingsmiddelen</li>
+      <li>Dosimetrie – eenheden (Gy, Sv, mSv)</li>
+      <li>Radiologische diagnostiek tandheelkundige aandoeningen</li>
+      <li>Kwaliteitscriteria röntgenfoto's</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">Straling</span><h3>Röntgenstraling – Productie en Eigenschappen</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Productie:</strong> Elektronen worden versneld naar wolframanode → bremsstrahlung + karakteristieke straling</li>
+          <li><strong>Eigenschappen:</strong> Elektromagnetische golf, reist met lichtsnelheid, geen massa/lading, ioniserend</li>
+          <li><strong>kV (kilovolt):</strong> Bepaalt kwaliteit (doordringvermogen) van de straling. Hoger kV → meer contrast reductie (grijzer beeld), meer doordringvermogen</li>
+          <li><strong>mA (milliampère):</strong> Bepaalt kwantiteit (intensiteit). Hoger mA → meer fotonen → hogere dosis</li>
+          <li><strong>Belichting (s):</strong> Duur van röntgenpulsatie. Minder mAs → lagere dosis</li>
+        </ul>
+        <div class="info-box">
+          <div class="info-box-title">Inversekwadraatswet</div>
+          <ul>
+            <li>Intensiteit straling neemt af met het kwadraat van de afstand</li>
+            <li>I₁/I₂ = d₂²/d₁² → dubbele afstand = ¼ intensiteit</li>
+            <li>Tandarts moet minstens 1,5-2m van bron staan (of achter muur)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">Dosimetrie</span><h3>Stralingsdosimetrie – Eenheden</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Eenheid</th><th>Grootheid</th><th>Definitie</th></tr>
+          <tr><td>Gray (Gy)</td><td>Geabsorbeerde dosis</td><td>1 Gy = 1 J/kg weefsel</td></tr>
+          <tr><td>Sievert (Sv)</td><td>Effectieve dosis</td><td>Gy × weegfactor straling × weegfactor weefsel</td></tr>
+          <tr><td>Becquerel (Bq)</td><td>Radioactiviteit</td><td>1 verval per seconde</td></tr>
+          <tr><td>mSv</td><td>Effectieve dosis (praktijk)</td><td>1/1000 Sv</td></tr>
+        </table>
+        <p style="margin-top:10px"><strong>Referentiedoses tandheelkunde:</strong></p>
+        <table>
+          <tr><th>Opname</th><th>Effectieve dosis</th></tr>
+          <tr><td>Periapicale foto (digitaal)</td><td>~1-8 µSv</td></tr>
+          <tr><td>Bitewing (digitaal)</td><td>~1-5 µSv</td></tr>
+          <tr><td>Panoramafoto</td><td>~15-25 µSv</td></tr>
+          <tr><td>CBCT (klein FOV)</td><td>~30-50 µSv</td></tr>
+          <tr><td>CBCT (groot FOV)</td><td>~100-300 µSv</td></tr>
+          <tr><td>Achtergrondstraling NL/jaar</td><td>~2000 µSv (2 mSv)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-green">ALARA</span><h3>ALARA-principe en Stralingsbescherming</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p><strong>ALARA</strong> = As Low As Reasonably Achievable</p>
+        <ul>
+          <li><strong>Rechtvaardiging:</strong> Alleen röntgenfoto maken als klinisch voordeel opweegt tegen stralingsrisico</li>
+          <li><strong>Optimalisatie:</strong> Gebruik van loodschort, schildklierbeschermer, collimatie, digitale receptoren, correcte instellingen</li>
+          <li><strong>Dosislimieten:</strong> Beroepsmatig max 20 mSv/jaar (gemiddeld 5 jaar), publiek max 1 mSv/jaar</li>
+          <li><strong>Zwangerschap:</strong> Bij zwangere patiënt: strikt ALARA. Loodschort ALTIJD. Indien medisch noodzakelijk: röntgen niet gecontraïndiceerd.</li>
+          <li><strong>Kinderen:</strong> Hogere stralingsgevoeligheid, sneller delende cellen → extra voorzichtigheid, lagere mAs</li>
+        </ul>
+        <div class="success-box">✅ Loodschort bij zwangere patiënt verplicht! Verwijzen voor CBCT bij zwangerschap tenzij strikt noodzakelijk.</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-purple">Diagnostiek</span><h3>Radiologische Diagnostiek Aandoeningen</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Aandoening</th><th>Radiologisch beeld</th></tr>
+          <tr><td>Caries (approxmaal)</td><td>Radiolucente schaduw onder glazuuroppervlak bitewing</td></tr>
+          <tr><td>Periapicale granuloom</td><td>Periapicale radiolucency, ronde begrenzing</td></tr>
+          <tr><td>Radiculaire cyste</td><td>Grotere periapicale radiolucency, corticale begrenzing</td></tr>
+          <tr><td>Parodontaal botverlies</td><td>Horizontaal of verticaal verlies alveolaire kam</td></tr>
+          <tr><td>Condenserende osteïtis</td><td>Periapicale radiopaciteit (reactief bot)</td></tr>
+          <tr><td>Hypercementose</td><td>Bolvormige verdikking apex, PDL-ruimte aanwezig</td></tr>
+          <tr><td>Ankylosis</td><td>Verdwijnen PDL-ruimte, tand gefuseerd aan bot</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="radio-samenvatting">
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Kernpunt</th></tr>
+      <tr><td>kV effect</td><td>Hogere kV = meer doordringvermogen, minder contrast</td></tr>
+      <tr><td>mA effect</td><td>Hogere mA = meer fotonen, hogere dosis</td></tr>
+      <tr><td>Inversekwadraatswet</td><td>Dubbele afstand = ¼ intensiteit</td></tr>
+      <tr><td>Periapicale foto dosis</td><td>~1-8 µSv (digitaal)</td></tr>
+      <tr><td>Panoramafoto dosis</td><td>~15-25 µSv</td></tr>
+      <tr><td>CBCT groot FOV</td><td>~100-300 µSv</td></tr>
+      <tr><td>Achtergrondstraling NL</td><td>~2 mSv/jaar</td></tr>
+      <tr><td>ALARA</td><td>As Low As Reasonably Achievable</td></tr>
+      <tr><td>Beroepsmatig max</td><td>20 mSv/jaar</td></tr>
+      <tr><td>Zwangere patiënt</td><td>Loodschort altijd, röntgen niet absoluut gecontraïndiceerd</td></tr>
+    </table>
+  </div>
+
+  <div class="tab-content" id="radio-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Radiologie çıkmış soru setleri</div>
+      <ul><li>Drive'daki radiologie dosyalarından aktarılan setler</li></ul>
+    </div>
+    <div id="set-selector-radio-cikmis"></div>
+    <div id="quiz-container-radio_cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-radio-cikmis', 'radio_cikmis', 'quiz-container-radio_cikmis');
+      });
+    </script>
+  </div>
+
+  <div class="tab-content" id="radio-oefen">
+    <div class="quiz-controls">
+      <button class="btn btn-primary" onclick="startQuiz('radio_oefen', 'quiz-container-radio_oefen')">▶ Start oefentoets (AI)</button>
+      <button class="btn btn-secondary" onclick="resetQuiz('radio_oefen', 'quiz-container-radio_oefen')">↺ Opnieuw</button>
+      
+    </div>
+    
+    <div id="quiz-container-radio_oefen"></div>
+  </div>
+</div>
+
+<!-- ██████ STATISTIEK ██████ -->
+<div class="page" id="page-statistiek">
+  <div class="section-hdr">
+    <div class="section-icon si-teal">📊</div>
+    <div><h2>Statistiek</h2><p>Radiologie &amp; Wetenschap · 15 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('statistiek','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('statistiek','samenvatting',this)">⚡ Samenvatting</button>
+    <button class="tab-btn" onclick="openTab('statistiek','cikmis',this)">📝 Cikmış Sorular</button>
+    <button class="tab-btn" onclick="openTab('statistiek','oefen',this)">🧪 Oefentoets (AI)</button>
+  </div>
+  <div class="tab-content active" id="statistiek-notities">
+    <div id="drive-notes-statistiek"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Kernthema's Statistiek – BI Toets</div>
+    <ul>
+      <li>Sensitiviteit en specificiteit – 2x2 tabel</li>
+      <li>Voorspellende waarden (PPV, NPV)</li>
+      <li>Likelihood ratio's (LR+, LR-)</li>
+      <li>NNT (Number Needed to Treat), NNH (Number Needed to Harm)</li>
+      <li>ARR (Absolute Risicoreductie), RRR (Relatieve Risicoreductie)</li>
+      <li>Screeningstest criteria (Wilson-Jungner)</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-teal">2x2 Tabel</span><h3>2x2 Tabel – Sensitiviteit en Specificiteit</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th></th><th>Ziekte +</th><th>Ziekte -</th></tr>
+          <tr><td><strong>Test +</strong></td><td>TP (echte positieven)</td><td>FP (vals positieven)</td></tr>
+          <tr><td><strong>Test -</strong></td><td>FN (vals negatieven)</td><td>TN (echte negatieven)</td></tr>
+        </table>
+        <table style="margin-top:14px">
+          <tr><th>Maat</th><th>Formule</th><th>Interpretatie</th></tr>
+          <tr><td><strong>Sensitiviteit</strong></td><td>TP / (TP + FN)</td><td>% werkelijk zieken die test+ zijn. Hoog → weinig FN. "SnNout"</td></tr>
+          <tr><td><strong>Specificiteit</strong></td><td>TN / (TN + FP)</td><td>% werkelijk gezonden die test- zijn. Hoog → weinig FP. "SpPin"</td></tr>
+          <tr><td><strong>PPV</strong></td><td>TP / (TP + FP)</td><td>% test-positieven die echt ziek zijn. Afhankelijk van prevalentie!</td></tr>
+          <tr><td><strong>NPV</strong></td><td>TN / (TN + FN)</td><td>% test-negatieven die echt gezond zijn</td></tr>
+          <tr><td><strong>LR+</strong></td><td>Sensitiviteit / (1-Specificiteit)</td><td>&gt;10 = zeer sterk bewijs ziekte aanwezig</td></tr>
+          <tr><td><strong>LR-</strong></td><td>(1-Sensitiviteit) / Specificiteit</td><td>&lt;0,1 = sterk bewijs ziekte afwezig</td></tr>
+        </table>
+        <div class="success-box">✅ Ezelsbruggetje: <strong>SnNout</strong> = hoge Sensitiviteit, negatieve test → sluit ziekte UIT. <strong>SpPin</strong> = hoge Specificiteit, positieve test → bevestigt ziekte.</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">NNT/ARR</span><h3>NNT, ARR en RRR</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Maat</th><th>Formule</th><th>Interpretatie</th></tr>
+          <tr><td><strong>ARR</strong> (Absoluut Risicoverschil)</td><td>Risico controle – Risico interventie</td><td>Absolute verbetering. Context afhankelijk.</td></tr>
+          <tr><td><strong>RRR</strong> (Relatief Risicoverschil)</td><td>ARR / Risico controle</td><td>% risicoreductie t.o.v. controle. Kan misleidend zijn!</td></tr>
+          <tr><td><strong>NNT</strong></td><td>1 / ARR</td><td>Hoeveel patiënten behandelen voor 1 extra genezing. LAGER = beter.</td></tr>
+          <tr><td><strong>NNH</strong></td><td>1 / ARI (Absoluut Risico Increment)</td><td>Hoeveel patiënten behandelen voor 1 extra schade</td></tr>
+          <tr><td><strong>OR</strong> (Odds Ratio)</td><td>Odds ziekte in behandeld / Odds in controle</td><td>Case-control studies, OR≈RR bij lage prevalentie</td></tr>
+          <tr><td><strong>RR</strong> (Relatief Risico)</td><td>Risico behandeld / Risico controle</td><td>Cohort studies, RCT's</td></tr>
+        </table>
+        <div class="warn-box">⚠️ NNT berekening: als ARR = 0,05 (5%) → NNT = 1/0,05 = 20. Elke 20 behandelde patiënten, 1 extra genezing!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-green">Studiedesign</span><h3>Studiedesigns – Bewijskracht</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p><strong>Hiërarchie bewijskracht (hoog → laag):</strong></p>
+        <ul>
+          <li>1. Systematische review + meta-analyse van RCT's</li>
+          <li>2. RCT (Gerandomiseerde Gecontroleerde Trial)</li>
+          <li>3. Cohort studie (prospectief &gt; retrospectief)</li>
+          <li>4. Case-control studie</li>
+          <li>5. Cross-sectionele studie</li>
+          <li>6. Case report / expertopinie</li>
+        </ul>
+        <table style="margin-top:10px">
+          <tr><th>Studiedesign</th><th>Kenmerk</th><th>Bias risico</th></tr>
+          <tr><td>RCT</td><td>Randomisatie, controlegroep</td><td>Laagst</td></tr>
+          <tr><td>Cohort</td><td>Blootstelling → uitkomst</td><td>Confounding</td></tr>
+          <tr><td>Case-control</td><td>Uitkomst → blootstelling (retrospectief)</td><td>Recall bias</td></tr>
+          <tr><td>Cross-sectioneel</td><td>Momentopname, prevalentie</td><td>Geen causaliteit</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="statistiek-samenvatting">
+    <table class="summary-table">
+      <tr><th>Concept</th><th>Formule</th><th>Onthouden</th></tr>
+      <tr><td>Sensitiviteit</td><td>TP/(TP+FN)</td><td><span class="badge-ans">SnNout</span></td></tr>
+      <tr><td>Specificiteit</td><td>TN/(TN+FP)</td><td><span class="badge-ans">SpPin</span></td></tr>
+      <tr><td>PPV</td><td>TP/(TP+FP)</td><td><span class="badge-ans">Prevalentieafh.</span></td></tr>
+      <tr><td>NNT</td><td>1/ARR</td><td><span class="badge-j">Lager = beter</span></td></tr>
+      <tr><td>ARR</td><td>Risico control - Risico interventie</td><td><span class="badge-ans">Absoluut</span></td></tr>
+      <tr><td>RRR</td><td>ARR/Risico control</td><td><span class="badge-oj">Kan misleiden!</span></td></tr>
+      <tr><td>LR+ &gt;10</td><td>Sterk bewijs aanwezig</td><td><span class="badge-j">Goed</span></td></tr>
+      <tr><td>LR- &lt;0,1</td><td>Sterk bewijs afwezig</td><td><span class="badge-j">Goed</span></td></tr>
+      <tr><td>Hoogste bewijs</td><td>Systematische review van RCT's</td><td><span class="badge-ans">Niveau 1</span></td></tr>
+    </table>
+  </div>
+  <div class="tab-content" id="statistiek-cikmis">
+    <div class="info-box">
+      <div class="info-box-title">📝 Statistiek / EBM çıkmış soru setleri</div>
+      <ul><li>Drive'daki wetenschap ve statistiek dosyalarından aktarılan setler</li></ul>
+    </div>
+    <div id="set-selector-statistiek-cikmis"></div>
+    <div id="quiz-container-statistiek_cikmis"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        initSetSelector('set-selector-statistiek-cikmis', 'statistiek_cikmis', 'quiz-container-statistiek_cikmis');
+      });
+    </script>
+  </div>
+  <div class="tab-content" id="statistiek-oefen">
+    <div class="quiz-controls">
+      <button class="btn btn-primary" onclick="startQuiz('statistiek_oefen', 'quiz-container-statistiek_oefen')">▶ Start oefentoets (AI)</button>
+      <button class="btn btn-secondary" onclick="resetQuiz('statistiek_oefen', 'quiz-container-statistiek_oefen')">↺ Opnieuw</button>
+      
+    </div>
+    
+    <div id="quiz-container-statistiek_oefen"></div>
+  </div>
+</div>
+
+<!-- ██████ METHODOLOGIE / EBM ██████ -->
+<div class="page" id="page-methodologie">
+  <div class="section-hdr">
+    <div class="section-icon si-purple">🔭</div>
+    <div><h2>Methodologie / Evidence-Based Medicine</h2><p>Radiologie &amp; Wetenschap · Open vragen · PICO</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('methodologie','notities',this)">📖 Studienotities</button>
+    <button class="tab-btn" onclick="openTab('methodologie','oefen',this)">📝 Oefenvragen</button>
+  </div>
+  <div class="tab-content active" id="methodologie-notities">
+    <div id="drive-notes-methodologie"></div>
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-purple">PICO</span><h3>PICO – Evidence-Based Medicine</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p>PICO is het structureringsmodel voor het formuleren van een klinische vraag:</p>
+        <table>
+          <tr><th>Letter</th><th>Betekenis</th><th>Voorbeeld (parodontitis)</th></tr>
+          <tr><td><strong style="color:var(--primary)">P</strong></td><td>Patient/Probleem/Populatie</td><td>Volwassenen met stadium III parodontitis</td></tr>
+          <tr><td><strong style="color:var(--success)">I</strong></td><td>Interventie</td><td>Subgingivale reiniging + amoxicilline</td></tr>
+          <tr><td><strong style="color:var(--warning)">C</strong></td><td>Comparator/Controle</td><td>Subgingivale reiniging alleen (placebo)</td></tr>
+          <tr><td><strong style="color:var(--danger)">O</strong></td><td>Outcome/Uitkomst</td><td>Pocketdiepte reductie na 3 maanden</td></tr>
+        </table>
+        <p style="margin-top:10px">Soms uitgebreid tot PICOS (S = Study type/design).</p>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">Bias</span><h3>Bias Typen in Wetenschappelijk Onderzoek</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Bias type</th><th>Definitie</th><th>Voorkomen</th></tr>
+          <tr><td>Selectiebias</td><td>Steekproef niet representatief</td><td>Randomisatie</td></tr>
+          <tr><td>Informatiebias</td><td>Onjuiste meting/registratie</td><td>Blindering, validatie instrumenten</td></tr>
+          <tr><td>Recall bias</td><td>Patiënten herinneren blootstelling onjuist</td><td>Objectieve data</td></tr>
+          <tr><td>Confounding</td><td>Derde variabele beïnvloedt relatie</td><td>Randomisatie, stratificatie, multivariaat analyse</td></tr>
+          <tr><td>Publicatiebias</td><td>Positieve studies vaker gepubliceerd</td><td>Grijze literatuur, registratie voor start</td></tr>
+          <tr><td>Attrition bias</td><td>Uitval deelnemers niet willekeurig</td><td>Intention-to-treat analyse</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="methodologie-oefen">
+    <div class="casus-card">
+      <div class="casus-label">EBM Oefenvraag 1</div>
+      <div class="casus-text">Een studie vergelijkt chlorhexidine-spoeling met placebo bij patiënten na extractie. In de CHX-groep ontwikkelt 5% alveolitis, in de placebogroep 15%. De studie heeft 200 deelnemers per groep.</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Bereken ARR, RRR en NNT.</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">ARR = 15% - 5% = 10% (= 0,10). RRR = 10%/15% = 67%. NNT = 1/0,10 = 10. Interpretatie: Van elke 10 patiënten die CHX-spoeling krijgen, wordt 1 extra alveolitis voorkomen.</div>
+      </div>
+    </div>
+    <div class="casus-card">
+      <div class="casus-label">EBM Oefenvraag 2</div>
+      <div class="casus-text">Formuleer een PICO-vraag voor de volgende klinische situatie: U wilt weten of fluoride lak (Duraphat) bij kinderen met hoog cariesrisico effectiever is dan tandpasta alleen om caries te voorkomen.</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Schrijf de volledige PICO op.</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">P: Kinderen 3-6 jaar met hoog cariesrisico (DMFT &gt;0). I: Fluoride lak (Duraphat 22.600 ppm) 2x per jaar applicatie + tandpasta. C: Tandpasta alleen (1000 ppm fluoride). O: Incidentie nieuwe carieuze laesies (dmft) over 2 jaar follow-up.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ██████ BEHANDELPLAN 1 ██████ -->
+<div class="page" id="page-bp1">
+  <div class="section-hdr">
+    <div class="section-icon si-orange">📋</div>
+    <div><h2>Behandelplan 1</h2><p>Casus-gebaseerd · Anamnese, diagnose, behandelplan</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('bp1','notities',this)">📖 Aanpak</button>
+    <button class="tab-btn" onclick="openTab('bp1','casussen',this)">📄 Oefencasussen</button>
+  </div>
+  <div class="tab-content active" id="bp1-notities">
+    <div id="drive-notes-bp1"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Behandelplan 1 – Structuur</div>
+    <ul>
+      <li>Gebaseerd op een complete patiëntencasus met anamnese, klachten en röntgenbevindingen</li>
+      <li>Taak: Diagnose stellen per element, behandelplan opstellen in gefaseerde aanpak</li>
+      <li>Let op: Systemische aandoeningen beïnvloeden behandelplan!</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-orange">Aanpak</span><h3>Stappenplan Behandelplan</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <ul>
+          <li><strong>Stap 1 – Probleemanalyse:</strong> Systematisch alle klachten en bevindingen inventariseren</li>
+          <li><strong>Stap 2 – Diagnose:</strong> Per element/kwadrant diagnose stellen (pulpadiagnose, paro-diagnose, structuurdiagnose)</li>
+          <li><strong>Stap 3 – Risico-inventarisatie:</strong> Cariesrisico, paro-risico, systemische factoren</li>
+          <li><strong>Stap 4 – Prioriteren:</strong> Spoedeisend → Causaal → Rehabilitatie → Preventief onderhoud</li>
+          <li><strong>Stap 5 – Behandelfasen:</strong><br>
+            Fase 1 (Initieel/Causaal): Extracties hopeloos, pijnbehandeling, MHI<br>
+            Fase 2 (Causaal): Caries behandeling, WKB, paro-reiniging<br>
+            Her-evaluatie<br>
+            Fase 3 (Restauratief): Kronen, bruggen, prothetiek<br>
+            Fase 4 (Onderhoud/Recall): SPT</li>
+        </ul>
+        <div class="success-box">✅ Altijd spoedeisende situaties EERST behandelen (pijn, acute infectie). Hopeloos geprognosseerde elementen vroeg extraheren zodat restauratief plan klopt.</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-red">Prognose</span><h3>Tandelementprognose – Criteria</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Prognose</th><th>Criteria</th></tr>
+          <tr><td><span class="badge-j">Goed</span></td><td>Vitale pulpa of WKB mogelijk, paro-score ≤DPSI3, voldoende kroonstructuur</td></tr>
+          <tr><td><span class="badge-ans">Twijfelachtig</span></td><td>Furcatie II-III, DPSI 4 pockets, WKB technisch moeilijk, beperkte kroonhoogte</td></tr>
+          <tr><td><span class="badge-oj">Hopeloos</span></td><td>Furcatie III + diep botverlies, wortelbreuk in middenderde, niet restaureerbaar, perforatie</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="bp1-casussen">
+    <div id="drive-casus-bp1"></div>
+    <div class="casus-card">
+      <div class="casus-label">Behandelplan Casus 1</div>
+      <div class="casus-text">Patiënt, 45 jaar, man. Rookt 15 sigaretten/dag. Diabetes type 2, HbA1c 8,2%. Klacht: pijn rechts boven. Bevindingen: 16 – diepe caries, percussie positief, niet vitaal. 17 – DPSI 4, furcatie klasse III. 14 – DPSI 3. Paro: Gemiddeld DPSI 3-4 in alle sextanten.</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Wat is de prognose van element 17? Motiveer.</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">Element 17: Prognose HOPELOOS. Furcatie klasse III + DPSI 4 pockets + slechte compliance (roken + ongecontroleerde DM HbA1c 8,2%). Paro-behandeling bij DM-patiënt met HbA1c &gt;8% geeft suboptimale respons. Aanbeveling: extractie 17 in behandelfase 1 (initieel).</div>
+      </div>
+      <div class="casus-q">
+        <div class="casus-q-text">Hoe beïnvloedt de diabetes het behandelplan?</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">HbA1c 8,2% = slecht gereguleerde DM. Gevolgen: verminderde wondgenezing, verhoogd infectierisico, slechtere paro-respons. Actie: overleg internist voor beter glucosemanagement. Pas daarna definitieve restauratieve fase. Antibiotica bij extracties overwegen. Roken: stopadvisering essentieel.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ██████ BEHANDELPLAN 2 ██████ -->
+<div class="page" id="page-bp2">
+  <div class="section-hdr">
+    <div class="section-icon si-orange">📋</div>
+    <div><h2>Behandelplan 2</h2><p>Complexere casus · Prothetiek, implantologie, multi-disciplinair</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('bp2','casussen',this)">📄 Oefencasussen</button>
+  </div>
+  <div class="tab-content active" id="bp2-casussen">
+    <div id="drive-notes-bp2"></div>
+    <div id="drive-casus-bp2"></div>
+    <div class="casus-card">
+      <div class="casus-label">Behandelplan Casus 2 – Prothetisch</div>
+      <div class="casus-text">Patiënt, 67 jaar, vrouw. Partieel edentaat. Resterende elementen: 14, 13, 23, 24 (bovenkaak) en 34, 33, 43, 44 (onderkaak). Overige elementen verloren door caries en parodontitis. Wenst vaste voorziening indien mogelijk. DPSI van resterende elementen: 2-3. Pulpavitaal.</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Bespreek de prothetische opties voor de bovenkaak.</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">Opties bovenkaak:<br>
+1. Frame prothese (partiële uitneembare prothese): Gebruik resterende elementen als steun. Voordeel: reversibel, goedkoper. Nadeel: uitneembaar, minder comfort.<br>
+2. Implantaatgedragen brug: Implantaten in premolaar/molaarpositie + brug op resterende cuspidaten. Mooiste functionele resultaat. Vereist voldoende botvolume (CBCT evaluatie).<br>
+3. Totale prothese BK + behoud elementen OK als overdenture-steunen.<br>
+Gezien botcondities na paro-verlies: CBCT voor implantaat-evaluatie aanbevolen.</div>
+      </div>
+    </div>
+    <div class="casus-card">
+      <div class="casus-label">Behandelplan Casus 3 – Endo-Restauratief</div>
+      <div class="casus-text">Patiënt, 38 jaar, vrouw. Element 46: grote MOD-kaviteit, percussie licht positief, koude test positief maar langzaam, röntgen: periapicale verbreding licht zichtbaar. Vraagt om restauratie met kroon.</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Wat is de diagnose en wat is het behandelplan?</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">Diagnose: Irreversibele pulpitis element 46 (spontane pijn, langzame koude-respons, percussie +). Mogelijk vroege periapicale pathologie.<br>
+Behandelplan:<br>
+1. WKB element 46 (wortelkanaalbehandeling) – spoedindicatie bij pijnklacht<br>
+2. Post-WKB evaluatie na 6-12 maanden (herstel periapicale pathologie?)<br>
+3. Vervolg: compositkern + volledige porselein-metalen kroon (of volledig keramisch als esthetiek belangrijk)<br>
+Aandacht: Bij MOD-kaviteit + WKB → kroon verplicht om wortelfractuur te voorkomen!</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ██████ KORTE CASUS ██████ -->
+<div class="page" id="page-casus">
+  <div class="section-hdr">
+    <div class="section-icon si-teal">📄</div>
+    <div><h2>Korte Casus</h2><p>Korte klinische scenario's · Snelle diagnostiek en behandelkeuze</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('casus','casussen',this)">📄 Casussen</button>
+    <button class="tab-btn" onclick="openTab('casus','tips',this)">💡 Tips</button>
+  </div>
+  <div class="tab-content active" id="casus-casussen">
+    <div id="drive-notes-casus"></div>
+    <div id="drive-casus-korte"></div>
+    <div class="casus-card">
+      <div class="casus-label">Korte Casus 1 – Parodontaal</div>
+      <div class="casus-text">Een 28-jarige man bezoekt u voor het eerst. Hij rookt, heeft slechte mondhygiëne. Bij screening: DPSI-score sextant rechts boven = 4, overige sextanten = 2-3. Röntgen: verticale botdefect distaal van element 16.</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Welk behandelprotocol past u toe en waarom?</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">DPSI 4 → uitgebreide paro-behandeling nodig. Behandelfasen: 1. MHI + rookstopadvies (essentieel bij rokers!). 2. Supragin. scaling alle sextanten. 3. Subgingivale reiniging (SRP) sextant rechts boven (focus op DPSI 4). 4. Her-evaluatie 4-8 weken. 5. Verticaal botdefect ≥6mm na her-evaluatie → verwijzing paro-specialist voor chirurgie overwegen. Roken DPSI sektant: vals lage BOP verwacht – moeilijker beoordelen ernst!</div>
+      </div>
+    </div>
+    <div class="casus-card">
+      <div class="casus-label">Korte Casus 2 – Farmacologisch</div>
+      <div class="casus-text">Een 72-jarige vrouw met boezemfibrilleren (warfarine, INR=3,2) heeft klachten van een pijnlijke, geinfecteerde gebitselement 36. WKB niet meer mogelijk. Extractie noodzakelijk. U twijfelt over de veiligheid.</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Is extractie veilig? Moet warfarine gestopt worden?</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">INR=3,2 is BINNEN de veilige grens voor extractie (grens = INR ≤3,5). Warfarine NIET stoppen! Risico op trombose (CVA, longembolie) groter dan bloedingsrisico. Protocol: Lokale hemostase (oxidatiecellulose, hechtingen, bijtgaas). Oxidatiecellulose (Surgicel) of fibrinelijm na extractie. Geen tampon 's avonds uitnemen. Patiënt instrueren over bloedingswaarschuwing. Overleg cardioloog/internist indien INR &gt;3,5 of bij twijfel.</div>
+      </div>
+    </div>
+    <div class="casus-card">
+      <div class="casus-label">Korte Casus 3 – Anesthesie</div>
+      <div class="casus-text">Een 55-jarige man met gecontroleerde angina pectoris vraagt om restauratieve behandeling. U wilt lokaalanesthesie geven. Hij gebruikt metoprolol en aspirine.</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Welke anesthesie en vasoconstrictorcombinatie kiest u?</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">Gecontroleerde angina = adrenaline VOORZICHTIG gebruiken. Max 0,04 mg adrenaline (= 2 carpules van 1,8ml 1:100.000). Voorkeur: Mepivacaïne 3% zonder vasoconstrictor bij stabiele angina, of lidocaïne 2% + 1:100.000 adrenaline maar MAXIMUM 2 carpules beperken. Aspirine = geen probleem voor extractie/restauratie (niet stoppen). Metoprolol: interactie met adrenaline (β-blokkade → relatieve α-werking → hypertensie!) → extra voorzichtig met adrenaline, langzaam injecteren, aspiratietest.</div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="casus-tips">
+    <div class="info-box">
+      <div class="info-box-title">💡 Tips voor Korte Casus Vragen</div>
+      <ul>
+        <li>Lees de casus altijd volledig – details over medicatie, leeftijd en systemische aandoeningen zijn cruciaal</li>
+        <li>Structureer je antwoord: Diagnose → Risicofactoren → Behandelkeuze → Monitoring</li>
+        <li>Vergeet rookstopadvisering nooit bij rokers!</li>
+        <li>Antistolling: INR ≤3,5 = extractie OK zonder stop medicatie</li>
+        <li>Diabetes slecht gereguleerd (HbA1c &gt;8%): eerst glucoseregeling verbeteren</li>
+        <li>Zwangerschap: elektief behandeling uitstellen naar 2e trimester indien mogelijk</li>
+        <li>Bisfosfonaten IV: geen implantaten of extracties tenzij strikt noodzakelijk</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ██████ ENDO TRAUMA & PIJN CASUS ██████ -->
+<div class="page" id="page-endo_trauma">
+  <div class="section-hdr">
+    <div class="section-icon si-red">🚑</div>
+    <div><h2>Endo Trauma &amp; Pijn Casus</h2><p>Acute situaties · Tandtrauma, pijnmanagement, urgentie</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('endo_trauma','notities',this)">📖 Aanpak</button>
+    <button class="tab-btn" onclick="openTab('endo_trauma','casussen',this)">📄 Casussen</button>
+  </div>
+  <div class="tab-content active" id="endo_trauma-notities">
+    <div id="drive-notes-endo-trauma"></div>
+    <div class="info-box"><div class="info-box-title">🎯 Endo Trauma – DETI-triage en Eerste Opvang</div>
+    <ul>
+      <li>DETI 1: Direct spoed – luchtwegproblemen, ernstige cellulitis</li>
+      <li>DETI 2: Binnen 24 uur – acuut abces met koorts/zwelling, avulsie vers tand</li>
+      <li>DETI 3: Binnen 48-72 uur – irreversibele pulpitis (intense pijn), kroonbreuk met pulpablootstelling</li>
+      <li>DETI 4: Binnen een week – subacute klachten</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-red">Trauma Protocol</span><h3>Tandtrauma – Eerste Opvang Protocol</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Letseltype</th><th>Eerste handeling</th><th>Spalken (duur)</th><th>Follow-up</th></tr>
+          <tr><td>Concussie</td><td>Observatie, zachte kost</td><td>Geen spalk nodig</td><td>4 weken, 3 maanden, 1 jaar</td></tr>
+          <tr><td>Subluxatie</td><td>Zachte kost, observatie</td><td>Flexibele spalk 2 weken</td><td>2 weken, 1, 3, 6 maanden</td></tr>
+          <tr><td>Extrusie</td><td>Repositie, spalk</td><td>2 weken</td><td>Wekelijks, 3/6/12 maanden</td></tr>
+          <tr><td>Laterale luxatie</td><td>Repositie onder anesthesie</td><td>4 weken</td><td>Regelmatig</td></tr>
+          <tr><td>Intrusie (volwassene)</td><td>Orthodontische/chirurgische repositie</td><td>4-8 weken</td><td>Intensief</td></tr>
+          <tr><td>Intrusie (kind)</td><td>Spontane heruitbraak afwachten</td><td>Geen (observatie)</td><td>4-6 weken</td></tr>
+          <tr><td>Avulsie (droog &lt;60min)</td><td>Oppakken bij kroon, melk bewaren, direct replantatie</td><td>2 weken flexibel</td><td>1, 2 weken; 3, 6, 12 maanden</td></tr>
+        </table>
+        <div class="warn-box">⚠️ Flexibele spalk vs. stijve spalk:<br>
+        - Flexibele spalk (0,4mm draad): subluxatie, extrusie, avulsie. Behoud PDL-functie, minder ankylose.<br>
+        - Stijve spalk (rigiede): wortel/alveolaire fractuur. 4 weken.</div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="endo_trauma-casussen">
+    <div id="drive-casus-endo-trauma"></div>
+    <div class="casus-card">
+      <div class="casus-label">Trauma Casus 1</div>
+      <div class="casus-text">Een 9-jarige jongen heeft een fietsongeval gehad. Element 21 is volledig geavulseerd. De moeder belt op: de tand ligt op de stoep en is er 30 minuten geleden uitgevallen. Ze is onderweg naar uw praktijk (ETA 15 minuten).</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Wat instrueert u de moeder telefonisch?</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">1. Tand oppakken bij de kroon (NIET bij de wortel aanraken – PDL-cellen beschermen!). 2. Korte spoeling met lauwwarm kraanwater. 3. Bewaren in melk (beste droogbewaringsmedium) of fysiologisch zout. Als alternatief: tand in de wang van de moeder (speeksel). 4. NIET in water bewaren (hypotoon, PDL-celdood). 5. Zo snel mogelijk naar de praktijk komen. Totale droge bewaring: nu 30 min = nog 30 min maximaal voor replantatie nog zinvol is.</div>
+      </div>
+      <div class="casus-q">
+        <div class="casus-q-text">Wat zijn uw handelingen bij aankomst? (droge bewaartijd totaal 45 min)</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">45 min droog = nog marginaal OK. Protocol: 1. Lokaalanesthesie. 2. Alveole spoelen met fysiologisch zout (bloedstolsel niet verwijderen). 3. Tand controleren: geen root contamination, apex open? (Kind 9j → apex waarschijnlijk open → kans op revascularisatie!). 4. Replantatie zachte beweging. 5. Flexibele spalk 2 weken (boogdraad, kunststof). 6. Amoxicilline/Doxycycline (revascularisatiekans beschermen). 7. Tetanus check. 8. Follow-up: WKB starten bij tekens pulpanecrose (1-2 weken bij gesloten apex; afwachten bij open apex). Röntgencontrole na 2 weken, 3/6/12 maanden.</div>
+      </div>
+    </div>
+
+    <div class="casus-card">
+      <div class="casus-label">Pijn Casus – Acuut Abces</div>
+      <div class="casus-text">Patiënt, 42 jaar, vrouw. Presenteert zich met ernstige kloppende pijn rechts onderkaak 24 uur. Wangen is duidelijk opgezet, koorts 38,5°C, trismus (beperkte mondopening). Element 46 niet vitaal, percussie+++. DPSI 2 in dit sextant.</div>
+      <div class="casus-q">
+        <div class="casus-q-text">Diagnose en behandelstrategie?</div>
+        <button class="btn btn-secondary" onclick="this.nextElementSibling.classList.toggle('show')">Toon antwoord</button>
+        <div class="casus-answer">Diagnose: Acuut apicaal abces element 46 met cellulitis (koorts, trismus, zwelling). DETI 2 = binnen 24 uur behandelen. Behandelplan: 1. Incisie en drainage van fluctuerende zwelling (indien aanwezig). 2. WKB-start (tand openen, drainage via kanaal). 3. Systemische antibiotica: Amoxicilline 500mg 3x/dag + Metronidazol 500mg 3x/dag 7 dagen (gezien cellulitis, koorts). 4. Analgesie: paracetamol + ibuprofen (gecombineerd schema). 5. Trismus monitoring – bij progressie naar submandibulaire ruimte: hospitalisatie! (Ludwig's angina risico). 6. Nazorg: WKB voltooien of extractie beslissing na infectiedaling.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ██████ CNT GESPREK ██████ -->
+<div class="page" id="page-gesprek">
+  <div class="section-hdr">
+    <div class="section-icon si-purple">💬</div>
+    <div><h2>CNT Gesprek</h2><p>Communicatie · Motiverende gespreksvoering · Patiëntrelatie</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('gesprek','theorie',this)">📖 Theorie</button>
+    <button class="tab-btn" onclick="openTab('gesprek','dialogen',this)">💬 Voorbeelddialogen</button>
+  </div>
+  <div class="tab-content active" id="gesprek-theorie">
+    <div class="info-box"><div class="info-box-title">🎯 CNT Gesprek – Communicatievaardigheden</div>
+    <ul>
+      <li>Motiverende Gespreksvoering (MGV/MI): OARS-model</li>
+      <li>Informed consent – voorwaarden en verloop</li>
+      <li>Slecht-nieuws gesprek – stappenplan SPIKES</li>
+      <li>Interculturele communicatie</li>
+      <li>Non-verbale communicatie</li>
+    </ul></div>
+
+    <div class="theory-card open">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-purple">MGV</span><h3>Motiverende Gespreksvoering (MGV) – OARS</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <table>
+          <tr><th>Letter</th><th>Techniek</th><th>Voorbeeld</th></tr>
+          <tr><td><strong style="color:var(--primary)">O</strong></td><td>Open vragen stellen</td><td>"Hoe is het u de afgelopen maanden vergaan met uw mondhygiëne?"</td></tr>
+          <tr><td><strong style="color:var(--success)">A</strong></td><td>Affirmatie (bevestigen)</td><td>"Het is knap dat u ondanks uw drukke leven toch hier bent."</td></tr>
+          <tr><td><strong style="color:var(--warning)">R</strong></td><td>Reflectief luisteren</td><td>"U zegt dat tandenpoetsen moeilijk vol te houden is."</td></tr>
+          <tr><td><strong style="color:var(--danger)">S</strong></td><td>Samenvatten</td><td>"Als ik het goed begrijp, weet u wat u moet doen maar lukt het niet altijd..."</td></tr>
+        </table>
+        <div class="success-box">✅ MGV-principes: autonomie respecteren, ambivalentie verkennen, eigen motivatie ontlokken. GEEN adviezen opdringen!</div>
+      </div>
+    </div>
+
+    <div class="theory-card">
+      <div class="theory-header" onclick="toggleCard(this)">
+        <span class="theory-tag tt-blue">Informed consent</span><h3>Informed Consent – Voorwaarden</h3><span class="theory-chevron">▼</span>
+      </div>
+      <div class="theory-body">
+        <p>Geldige informed consent vereist:</p>
+        <ul>
+          <li><strong>Wilsbekwaamheid:</strong> Patiënt begrijpt info en gevolgen. Bij twijfel: professionele beoordeling</li>
+          <li><strong>Adequate informatie:</strong> Diagnose, behandelplan, alternatieven, risico's, geen-behandeling gevolgen</li>
+          <li><strong>Vrijwilligheid:</strong> Geen dwang of manipulatie</li>
+          <li><strong>Begrip:</strong> Patiënt heeft informatie begrepen (terugvraagmethode)</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Leeftijdsgrenzen WGBO:</strong></p>
+        <ul>
+          <li>&lt;12 jaar: Ouders/voogd beslissen, maar kind informeren + wens meewegen</li>
+          <li>12-16 jaar: Zowel kind ALS ouder moeten instemmen (dubbele toestemming)</li>
+          <li>16-17 jaar: Zelfstandig beslissen (als wilsbekwaam)</li>
+          <li>≥18 jaar: Volledig zelfstandig</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="gesprek-dialogen">
+    <div class="gesprek-card">
+      <div class="gesprek-scene">📍 Situatie: Patiënt wil rookstop bespreken maar voelt weinig motivatie</div>
+      <div class="gesprek-body">
+        <div class="msg msg-patiënt">
+          <div class="msg-avatar">P</div>
+          <div><div class="msg-name">Patiënt</div><div class="msg-bubble">"Ik weet dat roken slecht is voor mijn tandvlees, maar ik kan er echt niet mee stoppen hoor. Te stressvol."</div></div>
+        </div>
+        <div class="msg msg-tandarts">
+          <div class="msg-avatar">T</div>
+          <div><div class="msg-name">Tandarts (reflectief)</div><div class="msg-bubble">"U weet dat roken invloed heeft op uw tandvlees, en tegelijk is stoppen voor u op dit moment moeilijk vanwege stress."</div></div>
+        </div>
+        <div class="msg msg-patiënt">
+          <div class="msg-avatar">P</div>
+          <div><div class="msg-name">Patiënt</div><div class="msg-bubble">"Ja, precies. Ik probeer het al jaren."</div></div>
+        </div>
+        <div class="msg msg-tandarts">
+          <div class="msg-avatar">T</div>
+          <div><div class="msg-name">Tandarts (open vraag)</div><div class="msg-bubble">"Wat zijn voor u de redenen geweest om in het verleden te willen stoppen?"</div></div>
+        </div>
+        <div class="msg msg-patiënt">
+          <div class="msg-avatar">P</div>
+          <div><div class="msg-name">Patiënt</div><div class="msg-bubble">"Gezondheid, voor mijn kinderen ook."</div></div>
+        </div>
+        <div class="msg msg-tandarts">
+          <div class="msg-avatar">T</div>
+          <div><div class="msg-name">Tandarts (affirmatie)</div><div class="msg-bubble">"Dat zijn sterke redenen. U heeft al eerder pogingen gedaan, dat vraagt moed. Als u ooit hulp wilt, zijn er goede stopmethoden beschikbaar. Maar ik respecteer dat u zelf bepaalt wanneer de tijd rijp is."</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gesprek-card">
+      <div class="gesprek-scene">📍 Situatie: Informed consent voor wortelkanaalbehandeling</div>
+      <div class="gesprek-body">
+        <div class="msg msg-tandarts">
+          <div class="msg-avatar">T</div>
+          <div><div class="msg-name">Tandarts</div><div class="msg-bubble">"Element 46 heeft een ontsteking van de zenuw. Ik wil dit graag met u bespreken. Is dat nu een goed moment?"</div></div>
+        </div>
+        <div class="msg msg-patiënt">
+          <div class="msg-avatar">P</div>
+          <div><div class="msg-name">Patiënt</div><div class="msg-bubble">"Ja, graag."</div></div>
+        </div>
+        <div class="msg msg-tandarts">
+          <div class="msg-avatar">T</div>
+          <div><div class="msg-name">Tandarts</div><div class="msg-bubble">"Er zijn twee opties: een wortelkanaalbehandeling waarbij we de zenuw verwijderen en de tand behouden, of de tand trekken. De WKB duurt 2-3 afspraken, is vergoed en heeft een slagingskans van 85-90%. Trekken is sneller maar dan mist u die tand. Welke optie spreekt u aan?"</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ██████ ACTUELE RICHTLIJNEN ██████ -->
+<div class="page" id="page-richtlijnen">
+  <div class="section-hdr">
+    <div class="section-icon si-orange">📚</div>
+    <div><h2>Actuele Richtlijnen</h2><p>KIMO · NVvP · KNMT · CBO richtlijnen</p></div>
+  </div>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="openTab('richtlijnen','paro',this)">🔴 Paro</button>
+    <button class="tab-btn" onclick="openTab('richtlijnen','endo',this)">🔵 Endo</button>
+    <button class="tab-btn" onclick="openTab('richtlijnen','medisch',this)">⚕️ Medisch</button>
+    <button class="tab-btn" onclick="openTab('richtlijnen','preventie',this)">🛡️ Preventie</button>
+  </div>
+
+  <div class="tab-content active" id="richtlijnen-paro">
+    <h3 style="font-size:15px;font-weight:700;margin-bottom:14px">Parodontologische Richtlijnen – NVvP 2022</h3>
+
+    <div class="rl-card">
+      <h3>Parodontale Behandelrichtlijn – Stap 1-4 Protocol</h3>
+      <div class="rl-org">NVvP (Nederlandse Vereniging voor Parodontologie) · EFP S3 Richtlijn 2020</div>
+      <ol class="rl-steps">
+        <li>Stap 1 (Initieel): Uitgebreide paro-anamnese, risicoassessment, MHI, supragin. reiniging, rookstop</li>
+        <li>Stap 2 (Causaal): Subgingivale reiniging (SRP) inclusief eliminatie tandsteenretentieve factoren</li>
+        <li>Her-evaluatie: 4-8 weken na Stap 2 (niet eerder, tissue needs time to remodel)</li>
+        <li>Stap 3 (Chirurgisch): Indien residuele pockets ≥6mm, furcatie klasse III na her-evaluatie</li>
+        <li>Stap 4 (Onderhoud/SPT): Individueel bepaald interval (3-6 maanden)</li>
+      </ol>
+    </div>
+
+    <div class="rl-card">
+      <h3>Antibiotica bij Parodontitis – NVvP Protocol</h3>
+      <div class="rl-org">NVvP · Evidence-based update 2020</div>
+      <ol class="rl-steps">
+        <li>Indicatie: Stg III/IV Graad C (vroeger "agressieve parodontitis"), jonge patiënt, snelle progressie</li>
+        <li>Eerste keus: Amoxicilline 500mg 3x/dag + Metronidazol 500mg 3x/dag, 7 dagen</li>
+        <li>Penallergie: Metronidazol 500mg 3x/dag monotherapie</li>
+        <li>Timing: Systemische AB GELIJKTIJDIG aan of direct na de laatste SRP-sessie</li>
+        <li>Contraindicatie: Niet als vervanging voor mechanische therapie</li>
+      </ol>
+    </div>
+
+    <div class="rl-card">
+      <h3>DPSI – Screeningsprocedure NL</h3>
+      <div class="rl-org">NIGZ/NVvP · Nederlandse standaard</div>
+      <ol class="rl-steps">
+        <li>Screening bij iedere nieuwe patiënt en bij controles (frequentie risico-afhankelijk)</li>
+        <li>Gebruik WHO-sonde (0,5mm bal, zwarte band 3,5-5,5mm)</li>
+        <li>6 sextanten scoren, hoogste score per sextant noteren</li>
+        <li>DPSI 4 en/of *-score → verdere paro-diagnostiek (PA-status inclusief full-mouth röntgen)</li>
+        <li>Rokers: BOP mogelijk onderdrukt, extra waakzaamheid bij klinische beoordeling</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="tab-content" id="richtlijnen-endo">
+    <h3 style="font-size:15px;font-weight:700;margin-bottom:14px">Endodontische Richtlijnen – ESE / NVvE</h3>
+
+    <div class="rl-card">
+      <h3>Wortelkanaalbehandeling – ESE Kwaliteitsrichtlijnen</h3>
+      <div class="rl-org">ESE (European Society of Endodontology) · 2006 update 2014</div>
+      <ol class="rl-steps">
+        <li>Diagnose: Klinisch + radiologisch onderzoek, vitaliteitstest</li>
+        <li>Toegangspreparatie: Volledig dak pulpakamer verwijderen, alle kanalingangen identificeren</li>
+        <li>Irrigatieprotocol: NaOCl (min 1%), EDTA voor smear layer, eindafspoelingen</li>
+        <li>Instrumentatie: Werkhoogte 0,5-1mm van röntgenapex, bevestigd met apex-locator</li>
+        <li>Obturatie: Hermetische afsluiting, guttapercha + sealer, beoordelen op röntgenfoto</li>
+        <li>Coronale restauratie: Spoedig na WKB, definitieve restauratie binnen 1-2 weken</li>
+        <li>Follow-up: 1 jaar postoperatief (radiologisch herstel beoordelen)</li>
+      </ol>
+    </div>
+
+    <div class="rl-card">
+      <h3>Tandtrauma – IADT Richtlijnen 2020</h3>
+      <div class="rl-org">IADT (International Association of Dental Traumatology) · 2020</div>
+      <ol class="rl-steps">
+        <li>Avulsie blijvende tand: Replantatie zo snel mogelijk (&lt;60 min droog = betere prognose)</li>
+        <li>Bewaarmedium voorkeur: HBSS of Viaspan; praktijk: melk, fysiologisch zout, speeksel</li>
+        <li>Spalk na replantatie: Flexibele spalk (0,4mm composietdraad) 7-14 dagen</li>
+        <li>Antibiotica: Doxycycline 100mg 2x/dag 7 dagen bij gesloten apex (resorptiepreventie)</li>
+        <li>WKB timing: 7-10 dagen bij gesloten apex; open apex = afwachten revascularisatie</li>
+        <li>Avulsie melktand: GEEN replantatie (risico tandkiem)</li>
+      </ol>
+    </div>
+
+    <div class="rl-card">
+      <h3>DETI – Tandheelkundige Triage</h3>
+      <div class="rl-org">Nederlandse tandheelkundige noodpraktijk protocollen</div>
+      <ol class="rl-steps">
+        <li>DETI 1 (Direct): Luchtwegproblemen, Ludwig's angina, ernstige faciale cellulitis → ziekenhuisopname</li>
+        <li>DETI 2 (24 uur): Acuut apicaal abces met koorts, ANUG, avulsie (&lt;1 uur), alveolitis</li>
+        <li>DETI 3 (48-72 uur): Irreversibele pulpitis, kroonbreuk + pulpa-blootstelling</li>
+        <li>DETI 4 (Week): Gebroken prothese, subacute pijn zonder zwelling, losse kroon</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="tab-content" id="richtlijnen-medisch">
+    <h3 style="font-size:15px;font-weight:700;margin-bottom:14px">Medische Richtlijnen Tandheelkunde</h3>
+
+    <div class="rl-card">
+      <h3>Endocarditis Profylaxe – NVVC/ESC 2015</h3>
+      <div class="rl-org">ESC Guidelines 2015 · NVVC</div>
+      <ol class="rl-steps">
+        <li>Hoog-risico patiënten: Kunstklep, eerder infective endocarditis, congenitale hartafwijking (cyanotisch, niet volledig gecorrigeerd)</li>
+        <li>Profylaxe geven bij: Tandheelkundige ingrepen met manipulatie gingivaal/periapicaal of mucosa-perforatie</li>
+        <li>Eerste keus: Amoxicilline 2g oraal 30-60 min voor ingreep</li>
+        <li>Penallergie: Clindamycine 600mg oraal 30-60 min voor ingreep</li>
+        <li>Niet aanbevolen bij: Laag-risico hart, gastrointestinale/genitourinaire procedures</li>
+      </ol>
+    </div>
+
+    <div class="rl-card">
+      <h3>Antistolling en Tandheelkunde – CBO Richtlijn</h3>
+      <div class="rl-org">KNMT / Federatie Medisch Specialisten</div>
+      <ol class="rl-steps">
+        <li>Vitamine K-antagonisten (Warfarine/Acenocoumarol): INR meten voor invasieve ingreep</li>
+        <li>INR ≤3,5: Extractie mogelijk, medicatie NIET stoppen. Lokale hemostase: oxidatiecellulose, hechtingen</li>
+        <li>INR &gt;3,5: Overleg internist/cardioloog; elektieve ingreep uitstellen</li>
+        <li>DOAC (apixaban, rivaroxaban, dabigatran): Laatste dosis overslaan voor invasief ingreep</li>
+        <li>Trombocytenaggregatieremmers (aspirine, clopidogrel): NIET stoppen bij extractie; lokale hemostase</li>
+      </ol>
+    </div>
+
+    <div class="rl-card">
+      <h3>MRONJ – Medicatie-gerelateerde Osteonecrose Kaak</h3>
+      <div class="rl-org">AAOMS / NVMKA Richtlijn 2022</div>
+      <ol class="rl-steps">
+        <li>Definitie: ≥8 weken blootgelegen bot kaak, gebruik antiresorptiva/antiangiogenica, geen bestralingsoorzaak</li>
+        <li>Hoog risico: IV bisfosfonaten (zoledroninezuur, pamidronaat voor oncologie)</li>
+        <li>Laag risico: Oraal bisfosfonaten (alendronaat, risedronaat voor osteoporose)</li>
+        <li>Preventie: Tandheelkundig screening voor start IV bisfosfonaten. Behandel actieve infecties en hopeloos geprognosseerde elementen</li>
+        <li>Bij IV bisfosfonaten: Invasieve procedures vermijden of in overleg oncoloog</li>
+        <li>Bij oraal bisfosfonaten (&lt;4 jaar): Extractie OK, wel monitoring. &gt;4 jaar of corticosteroïden: medicatievrij interval overwegen</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="tab-content" id="richtlijnen-preventie">
+    <h3 style="font-size:15px;font-weight:700;margin-bottom:14px">Preventieve Richtlijnen</h3>
+
+    <div class="rl-card">
+      <h3>Fluoride Preventieadvies – Acta/KNMT 2019</h3>
+      <div class="rl-org">Acta / KNMT / NHG</div>
+      <ol class="rl-steps">
+        <li>Tandpasta &lt;3 jaar: 500 ppm fluoride, rijstkorrelgrootte (0,1mg), 2x/dag</li>
+        <li>Tandpasta 3-6 jaar: 1000 ppm fluoride, erwtgrootte (0,5mg), 2x/dag</li>
+        <li>Tandpasta 6-17 jaar: 1450 ppm fluoride, 1cm strip, 2x/dag</li>
+        <li>Fluoride lak (22.600 ppm): Hoog-risico kinderen, 2-4x/jaar. Aanbevolen bij DPSI 0-1 patiënten met hoog cariesrisico</li>
+        <li>Sealants: 6-jaars molaar bij hoog-risico kinderen zodra tand volledig doorgebroken is</li>
+        <li>Fluoride tabletten: Niet meer standaard aanbevolen (fluorose risico, beperkt post-eruptief effect)</li>
+      </ol>
+    </div>
+
+    <div class="rl-card">
+      <h3>Recall Frequentie – NICE / KNMT Richtlijn</h3>
+      <div class="rl-org">KNMT Richtlijn Zorg voor mondhygiëne</div>
+      <ol class="rl-steps">
+        <li>Laag risico: Recall elke 24 maanden (volwassenen)</li>
+        <li>Gemiddeld risico: Recall elke 12 maanden</li>
+        <li>Hoog risico: Recall elke 3-6 maanden (diabetes, droge mond, actieve caries, hoge cariesanamnese)</li>
+        <li>SPT na paro-behandeling: 3-6 maanden afhankelijk van paro-risicoprofiel</li>
+        <li>Kinderen met actieve caries: Elke 3-6 maanden tot caries stabiel</li>
+      </ol>
+    </div>
+
+    <div class="rl-card">
+      <h3>Röntgendiagnostiek – Selectiecriteria</h3>
+      <div class="rl-org">European Guidelines on Radiation Protection · KIMO</div>
+      <ol class="rl-steps">
+        <li>Nieuwe patiënt hoog risico: Bitewings + periapicale foto's (full survey)</li>
+        <li>Caries-screening laag risico: Bitewings elke 24-36 maanden</li>
+        <li>Caries-screening hoog risico: Bitewings elke 12-18 maanden</li>
+        <li>Kinderen: Bitewings bij contactpunten niet meer zichtbaar, pedo-adaptaties</li>
+        <li>Panoramafoto: Niet als screening. Indicatie: paro (overview), WKB molaren, verstandskiezen, traumatologie</li>
+        <li>CBCT: Alleen bij aantoonbare klinische voordelen boven 2D-röntgen (implantologie, complex endodontie)</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+
+<!-- ██████ THK-1 PROEFTENTAMEN ██████ -->
+<div class="page" id="page-thk1">
+  <div class="section-hdr">
+    <div class="section-icon si-blue">📋</div>
+    <div><h2>THK-1 Proeftentamen 2025</h2><p>Tandheelkunde I · 70 MC-vragen · Slagingsgrens 80%</p></div>
+  </div>
+  <div class="info-box" style="margin-bottom:18px">
+    <div class="info-box-title">📊 Verdeling THK-1 (Bron: SECIL BI2026 HAZIRAN)</div>
+    <ul>
+      <li>A. Cariologie – 15 vragen</li>
+      <li>B. Endodontologie – 20 vragen</li>
+      <li>C. Speeksel &amp; Halitose – 10 vragen</li>
+      <li>D. Kindertandheelkunde – 10 vragen</li>
+      <li>E. Parodontologie – 15 vragen</li>
+    </ul>
+  </div>
+  <div id="thk1-set-selector"></div>
+  <div id="quiz-container-thk1"></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initSetSelector('thk1-set-selector',
+        ['thk1_cario','thk1_endo','thk1_speeksel','thk1_pedo','thk1_paro'],
+        'quiz-container-thk1');
+    });
+  </script>
+</div>
+
+  </div><!-- end #content -->
+</main><!-- end #main -->
+
+
+
+<script src="data_cikmis.js"></script>
+<script src="data_cikmis_basis.js"></script>
+<script src="data_cikmis_endo.js"></script>
+<script src="data_cikmis_paro.js"></script>
+<script src="data_cikmis_pedo.js"></script>
+<script src="data_cikmis_speeksel.js"></script>
+<script src="data_thk1.js"></script>
+<script src="data_drive_imported.js"></script>
+<script src="data_drive_notes.js"></script>
+<script src="data_drive_casus.js"></script>
+<script src="data_ai_paro.js"></script>
+<script src="data_ai_endo.js"></script>
+<script src="data_ai_basis.js"></script>
+<script src="data_ai_cario.js"></script>
+<script src="quiz.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
